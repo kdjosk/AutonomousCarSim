@@ -1,4 +1,4 @@
-package javacarsim;
+package carsimulator;
 
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.*;

@@ -1,9 +1,7 @@
-package javacarsim;
+package carsimulator;
 
-import  org.lwjgl.input.Keyboard;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.*;
-import java.math.*;
 
 public class Menu extends BasicGameState{
 
