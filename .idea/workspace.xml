@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03c32d67-e5b6-4f1b-ab20-01af82c864e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Tyre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/model.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Parameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/tyre.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/tyre.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Tyre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Tyre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/tyre.properties" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +42,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/carsimulator/carmodel" />
       <recent name="$PROJECT_DIR$/src/carsimulator/carmodel/tyre" />
     </key>
   </component>
@@ -91,7 +94,7 @@
       <workItem from="1573381997331" duration="4762000" />
       <workItem from="1573538916749" duration="10544000" />
       <workItem from="1573730506668" duration="3320000" />
-      <workItem from="1573900753890" duration="5129000" />
+      <workItem from="1573900753890" duration="12249000" />
     </task>
     <servers />
   </component>

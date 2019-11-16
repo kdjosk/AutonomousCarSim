@@ -5,25 +5,26 @@ import java.io.*;
 
 public class Tyre {
 
-    Parameters p;
+    public Tyre() {
 
-    public Tyre(String propertiesFile)
-    {
-        p = new Parameters();
     }
 
-    public double getLongitudinalForcePureSlip(double kappa, double Fz, double dfz, double pi, double dpi, double gamma, double degressiveFrictionFactor, double compositeFrictionFactor){
+    public double getLatForceFront(Parameters p, double slip_angle, double frictionCoef, double longForceFront, double longForceRear) {
 
-        double S_Vx = Fz * (p.pVx1 + p.pVx2 * dfz) * p.userVerticalShift * degressiveFrictionFactor * p.zeta[1];
-        double S_Hx = (p.pHx1 + p.pHx2 * dfz) * p.userHorizontalShift;
-        double Kxk = Fz*(p.pKx1 + p.pKx2 * dfz) * Math.exp(p.pKx3 * dfz) * (1 + p.ppx1*dpi + p.ppx2*dpi*dpi);
-        double kappa_x = kappa + S_Hx;
-        double Ex = (p.pEx1 + p.pEx2*dfz + p.pEx3*dfz*dfz) * (1 - p.pEx4*Math.signum(kappa_x)) * p.userCurvatureFactor;
-        double mu_x = (p.pDx1 + p.pDx2*dfz) * (1 + p.ppx3*dpi + p.ppx4*dpi*dpi) * (1 - p.pDx3*gamma*gamma) * compositeFrictionFactor;
-        double Dx = mu_x * Fz * p.zeta[1];
+        double normForce = (p.m * p.g * p.lr - (longForceFront + longForceRear) * p.h)/(p.lf + p.lr);
+        double alphaWiggle = p.Cf * slip_angle / (frictionCoef * normForce);
+        double Fy = frictionCoef * normForce * (alphaWiggle - alphaWiggle * Math.abs(alphaWiggle)/3 + Math.pow(alphaWiggle, 3)/27)
+                  * Math.sqrt(1 - Math.pow(longForceFront/(frictionCoef * normForce), 2) + Math.pow(longForceFront/p.Cf, 2));
+        return Fy;
     }
 
-    public double psatan(double x) {
-        return x * (1 + 1.1 * Math.abs(x))/(1 + 0.63662*(1.6 * Math.abs(x) + 1.1 * x * x));
+    public double getLatForceRear(Parameters p, double slip_angle, double frictionCoef, double longForceFront, double longForceRear) {
+
+        double normForce = (p.m * p.g * p.lf + (longForceFront + longForceRear) * p.h)/(p.lf + p.lr);
+        double alphaWiggle = p.Cr * slip_angle / (frictionCoef * normForce);
+        double Fr = frictionCoef * normForce * (alphaWiggle - alphaWiggle * Math.abs(alphaWiggle)/3 + Math.pow(alphaWiggle, 3)/27)
+                * Math.sqrt(1 - Math.pow(longForceRear/(frictionCoef * normForce), 2) + Math.pow(longForceRear/p.Cr, 2));
+        return Fr;
     }
+
 }
