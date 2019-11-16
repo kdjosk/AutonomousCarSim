@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03c32d67-e5b6-4f1b-ab20-01af82c864e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/model.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/body/Body.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/body/body.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/tyre.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Parameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarSimulator/javacarsim/CarModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarSimulator/javacarsim/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarSimulator/javacarsim/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarSimulator/javacarsim/Play.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/model.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Parameters.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Tyre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Tyre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre/tyre.properties" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +29,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/carsimulator/carmodel/tyre/Parameters.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1T3MsrTkY6s1TS0NhiN3LG15eDd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -94,7 +96,7 @@
       <workItem from="1573381997331" duration="4762000" />
       <workItem from="1573538916749" duration="10544000" />
       <workItem from="1573730506668" duration="3320000" />
-      <workItem from="1573900753890" duration="12249000" />
+      <workItem from="1573900753890" duration="21503000" />
     </task>
     <servers />
   </component>
