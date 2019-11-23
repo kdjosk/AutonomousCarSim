@@ -1,11 +1,13 @@
-package carsimulator.carmodel.tyre;
+package carsimulator.carmodel;
 
 import java.util.*;
 import java.io.*;
 
 public class Tyre {
 
-    public double Fx, Fy, Mz;
+    double Fx, Fy, Mz;
+    double R;
+    double Iy;
     double Tw;
     double Tp;
     double Fzt;
@@ -38,6 +40,8 @@ public class Tyre {
             e.printStackTrace();
         }
 
+        R = Double.parseDouble(p.getProperty("R"));
+        Iy = Double.parseDouble(p.getProperty("Iy"));
         Tw = Double.parseDouble(p.getProperty("Tw"));
         Tp = Double.parseDouble(p.getProperty("Tp"));
         Fzt = Double.parseDouble(p.getProperty("Fzt"));
