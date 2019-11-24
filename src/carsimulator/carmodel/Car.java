@@ -1,6 +1,10 @@
 package carsimulator.carmodel;
 
+import org.lwjgl.Sys;
+
 import java.io.*;
+import java.text.DecimalFormat;
+import java.util.Arrays;
 import java.util.Properties;
 
 public class Car {
@@ -18,8 +22,8 @@ public class Car {
     final double IZ;
 
     // Tyres
-    Tyre frontTyre;
-    Tyre rearTyre;
+    public Tyre frontTyre;
+    public Tyre rearTyre;
 
     // Instantaneous longitudinal acceleration
     double ax;
@@ -30,7 +34,7 @@ public class Car {
     double vy;
 
     // Yaw variables
-    double yawAngle;
+    public double yawAngle;
     double yawRate;
 
     // Steering angle
@@ -67,6 +71,18 @@ public class Car {
         frontTyre = new Tyre(frontTyreProperties);
         rearTyre = new Tyre(rearTyreProperties);
         this.dt = dt;
+        fixedY = 0;
+        fixedX = 0;
+        ax = 0;
+        ay = 0;
+        vx = 0;
+        vy = 0;
+        yawAngle = 0;
+        yawRate = 0;
+        delta = 0;
+        t = 0;
+        omegar = 0;
+        omegaf = 0;
     }
 
     interface Differential {
@@ -121,36 +137,45 @@ public class Car {
         5 - fixedY
         6 - omegaf
         7 - omegar
-         */
+        */
 
         Differential[] f = new Differential[8];
 
-        f[0] = (double x, double[] y) -> yawAngle;
-        f[1] = (double x, double[] y) -> 1.0/IZ * (LF * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta) - LR*Fyr));
-        f[2] = (double x, double[] y) -> 1.0/M * (Fxf*Math.cos(delta) - Fyf*Math.sin(delta) - Fxr) + y[3]*y[1];
-        f[3] = (double x, double[] y) -> 1.0/M * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta) + Fyr) + y[2]*y[1];
+        f[0] = (double x, double[] y) -> y[1];
+        f[1] = (double x, double[] y) -> (1.0/IZ) * (LF * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta) - LR*Fyr));
+        f[2] = (double x, double[] y) -> (1.0/M) * (Fxf*Math.cos(delta) - Fyf*Math.sin(delta) - Fxr) + y[3]*y[1];
+        f[3] = (double x, double[] y) -> (1.0/M) * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta) + Fyr) + y[2]*y[1];
         f[4] = (double x, double[] y) -> y[2]*Math.cos(y[0]) - y[3]*Math.sin(y[0]);
         f[5] = (double x, double[] y) -> y[2]*Math.sin(y[0]) + y[3]*Math.cos(y[0]);
-        f[6] = (double x, double[] y) -> 1.0/frontTyre.Iy * (Fxf*frontTyre.R + frontTorque);
-        f[7] = (double x, double[] y) -> 1.0/rearTyre.Iy * (rearTyre.Fx*rearTyre.R + rearTorque);
+        f[6] = (double x, double[] y) -> (1.0/frontTyre.Iy) * (Fxf*frontTyre.R + frontTorque);
+        f[7] = (double x, double[] y) -> (1.0/rearTyre.Iy) * (Fxr*rearTyre.R + rearTorque);
 
         double[] y = {yawAngle, yawRate, vx, vy, fixedX, fixedY, omegaf, omegar};
         y = rungeKutta4(t, y, dt, f);
+        ax = (y[2] - vx)/dt;
+        ay = (y[3] - vy)/dt;
         yawAngle = y[0]; yawRate = y[1]; vx = y[2]; vy = y[3]; fixedX = y[4]; fixedY = y[5]; omegaf = y[6]; omegar = y[7];
 
-        updateTyreForces(frontTorque, rearTorque);
+        updateTyreForces();
 
+        t += dt;
+
+        DecimalFormat df = new DecimalFormat("0.00");
+        Arrays.stream(y).forEach(e -> System.out.print(df.format(e) + " "));
+        System.out.println();
     }
 
-    private void updateTyreForces(double frontTorque, double rearTorque) {
+    private void updateTyreForces() {
 
         // Normal loads
         double Fzf = M*(G*LR - ax*HCG)/(LF + LR);
         double Fzr = M*(G*LF - ax*HCG)/(LF + LR);
 
         // Slip angles
-        double alphaf = Math.atan2(vy + LF* yawRate, vx) - delta;
-        double alphar = Math.atan2(vy + LR* yawRate, vx);
+        double alphaf = Math.atan2((vy + LF * yawRate), vx) - delta;
+        double alphar = Math.atan2((vy + LR * yawRate), vx);
+        if(Math.abs(alphaf) > Math.PI/2) alphaf = Math.PI/2*Math.signum(alphaf);
+        if(Math.abs(alphar) > Math.PI/2) alphar = Math.PI/2*Math.signum(alphar);
 
         // Tyre velocities
         double vtf = Math.sqrt((vy + LF* yawRate)*(vy + LF* yawRate) + vx*vx);
@@ -159,10 +184,16 @@ public class Car {
         // Tyre velocity longitudinal components
         double vwxf = vtf * Math.cos(alphaf);
         double vwxr = vtr * Math.cos(alphar);
+        double kappaf = 0, kappar = 0;
 
-        double kappaf = vwxf > omegaf*frontTyre.R ? (vwxf - omegaf*frontTyre.R)/vwxf : (omegaf*frontTyre.R - vwxf)/vwxf;
-        double kappar = vwxr > omegaf*rearTyre.R ? (vwxr - omegaf*rearTyre.R)/vwxr : (omegaf*rearTyre.R - vwxr)/vwxr;
-
+        if(vwxf != 0 || omegaf != 0) {
+            kappaf = vwxf > omegaf*frontTyre.R ? (vwxf - omegaf*frontTyre.R)/vwxf : (omegaf*frontTyre.R - vwxf)/omegaf*frontTyre.R;
+            if(Math.abs(kappaf) >= 1) kappaf = (1 - 1e-5) * Math.signum(kappaf) ;
+        }
+        if(vwxr != 0 || omegar != 0) {
+            kappar = vwxr > omegar * rearTyre.R ? (vwxr - omegar * rearTyre.R) / vwxr : (omegar * rearTyre.R - vwxr) / omegar * rearTyre.R;
+            if(Math.abs(kappar) >= 1) kappar = (1 - 1e-5) * Math.signum(kappar) ;
+        }
         frontTyre.updateForces(Fzf, kappaf, alphaf);
         rearTyre.updateForces(Fzr, kappar, alphar);
     }

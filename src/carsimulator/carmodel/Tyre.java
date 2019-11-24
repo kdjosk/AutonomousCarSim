@@ -5,7 +5,7 @@ import java.io.*;
 
 public class Tyre {
 
-    double Fx, Fy, Mz;
+    public double Fx, Fy, Mz, alpha, kappa;
     double R;
     double Iy;
     double Tw;
@@ -66,6 +66,8 @@ public class Tyre {
 
     void updateForces(double Fz, double kappa, double alpha) {
 
+        this.kappa = kappa;
+        this.alpha = alpha;
         // Normal contact patch length
         double ap0 = 0.0768 * Math.sqrt(Fz * Fzt)/(Tw * (Tp + 5));
         // Stretched/compressed contact patch length
@@ -85,16 +87,20 @@ public class Tyre {
         double Ygamma = A3 * Fz - (A3/A4) * Math.pow(Fz, 2);
 
         double temp2 = Math.sqrt(Math.pow(Ks * Math.tan(alpha), 2) + Math.pow(KcPrim * kappa, 2));
+        if(temp2 != 0) {
 
-        Fy = f(sigma) * Ks * Math.tan(alpha) / temp2 + Ygamma * gamma;
-        Fy *= mu * Fz;
+            Fy = f(sigma) * Ks * Math.tan(alpha) / temp2 + Ygamma * gamma;
+            Fy *= mu * Fz;
 
-        Fx = -f(sigma) * KcPrim * kappa / temp2;
-        Fx *= mu * Fz;
+            Fx = f(sigma) * KcPrim * kappa / temp2;
+            Fx *= mu * Fz;
+        }
+        else {
+            Fy = Ygamma * gamma;
+            Fx = 0;
+        }
 
-        // Aligning torque TODO
-
-
+        // TODO Aligning torque
 
 
     }
