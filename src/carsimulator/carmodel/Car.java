@@ -162,6 +162,7 @@ public class Car {
 
         DecimalFormat df = new DecimalFormat("0.00");
         Arrays.stream(y).forEach(e -> System.out.print(df.format(e) + " "));
+        System.out.print("Fxf: " + frontTyre.Fx + " Fyf: " + frontTyre.Fy + " Fxr: " + rearTyre.Fx + " Fyr: " + rearTyre.Fy + " ");
         System.out.println();
     }
 

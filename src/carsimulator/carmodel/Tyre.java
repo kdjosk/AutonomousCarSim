@@ -92,7 +92,7 @@ public class Tyre {
             Fy = f(sigma) * Ks * Math.tan(alpha) / temp2 + Ygamma * gamma;
             Fy *= mu * Fz;
 
-            Fx = f(sigma) * KcPrim * kappa / temp2;
+            Fx = -f(sigma) * KcPrim * kappa / temp2;
             Fx *= mu * Fz;
         }
         else {
