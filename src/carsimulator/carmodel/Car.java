@@ -14,6 +14,8 @@ public class Car {
     final double M;
     // Gravity
     final double G;
+    // Yaw inertia
+    final double IZ;
 
     // Tyres
     Tyre frontTyre;
@@ -21,11 +23,16 @@ public class Car {
 
     // Instantaneous longitudinal acceleration
     double ax;
+    double ay;
+
     // Velocity
     double vx;
     double vy;
-    // Angular velocity
-    double omega;
+
+    // Yaw variables
+    double yawAngle;
+    double yawRate;
+
     // Steering angle
     double delta;
 
@@ -36,6 +43,10 @@ public class Car {
     // Tyre angular velocities
     double omegaf;
     double omegar;
+
+    // Coordinates to fixed reference frame
+    double fixedX;
+    double fixedY;
 
 
     public Car(String bodyProperties, String frontTyreProperties, String rearTyreProperties) {
@@ -51,32 +62,87 @@ public class Car {
         HCG = Double.parseDouble(p.getProperty("HCG"));
         M = Double.parseDouble(p.getProperty("M"));
         G = Double.parseDouble(p.getProperty("G"));
+        IZ = Double.parseDouble(p.getProperty("IZ"));
 
         frontTyre = new Tyre(frontTyreProperties);
         rearTyre = new Tyre(rearTyreProperties);
     }
 
     interface Differential {
-        double dydx(double x, double y);
+        double dydx(double x, double[] y);
     }
 
-    double rungeKutta(double t0, double y0, Differential diff) {
+    double[] rungeKutta4(double x0, double[] y0, double h, Differential[] f) {
 
-        double k1, k2, k3, k4, k5;
-        k1 = diff.dydx(t0, y0);
-        k2 = diff.dydx(t0 + 0.5 * dt, y0 + 0.5 * k1 * dt);
-        k3 = diff.dydx(t0 + 0.5 * dt, y0 + 0.5 * k2 * dt);
-        k4 = diff.dydx(t0 + dt, y0 + k3 * dt);
+        int n = f.length;
+        double[][] k = new double[5][n];
 
-        double avgSlope = (1.0/6.0) * (k1 + 2*k2 + 2*k3 + k4);
+        for(int i = 0; i < n; i++) k[0][i] = 0;
+        // step length multiplier
+        double[] a = {0, 0, 0.5, 0.5, 1};
 
-        double y = y0 + avgSlope * dt;
+        double[] y = y0;
+        for(int i = 1; i < 5; i++) {
+
+            for(int j = 0; j < n; j++) {
+                y[j] = y0[j] + k[i - 1][j] * a[i];
+            }
+
+            for(int j = 0; j < n; j++) {
+
+                k[i][j] = h * f[j].dydx(x0 + a[i] * h, y);
+            }
+
+        }
+
+        for(int i = 0; i < n; i++) {
+            y[i] = y0[i] + 1.0/6.0 * (k[1][i] + 2*k[2][i] + 2*k[3][i] + k[4][i]) * h;
+        }
 
         return y;
     }
 
+    public void updateModel(double frontTorque, double rearTorque, double steeringAngle) {
 
-    // TODO
+        delta = steeringAngle;
+
+        double Fxf = frontTyre.Fx;
+        double Fyf = frontTyre.Fy;
+        double Fxr = rearTyre.Fx;
+        double Fyr = rearTyre.Fy;
+
+        /*
+        Differential equations:
+        0 - yawAngle
+        1 - yawRate
+        2 - vx
+        3 - vy
+        4 - fixedX
+        5 - fixedY
+        6 - omegaf
+        7 - omegar
+         */
+
+        Differential[] f = new Differential[8];
+
+
+        f[0] = (double x, double[] y) -> yawAngle;
+        f[1] = (double x, double[] y) -> 1/IZ * (LF * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta) - LR*Fyr));
+        f[2] = (double x, double[] y) -> 1/M * (Fxf*Math.cos(delta) - Fyf*Math.sin(delta) - Fxr) + y[3]*y[1];
+        f[3] = (double x, double[] y) -> 1/M * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta) + Fyr) + y[2]*y[1];
+        f[4] = (double x, double[] y) -> y[2]*Math.cos(y[0]) - y[3]*Math.sin(y[0]);
+        f[5] = (double x, double[] y) -> y[2]*Math.sin(y[0]) + y[3]*Math.cos(y[0]);
+        f[6] = (double x, double[] y) -> 1.0/frontTyre.Iy * (Fxf*frontTyre.R + frontTorque);
+        f[7] = (double x, double[] y) -> 1.0/rearTyre.Iy * (rearTyre.Fx*rearTyre.R + rearTorque);
+
+        double[] y = {yawAngle, yawRate, vx, vy, fixedX, fixedY, omegaf, omegar};
+        y = rungeKutta4(t, y, dt, f);
+        yawAngle = y[0]; yawRate = y[1]; vx = y[2]; vy = y[3]; fixedX = y[4]; fixedY = y[5]; omegaf = y[6]; omegar = y[7];
+
+        updateTyreForces(frontTorque, rearTorque);
+
+    }
+
     public void updateTyreForces(double frontTorque, double rearTorque) {
 
         // Normal loads
@@ -84,34 +150,22 @@ public class Car {
         double Fzr = M*(G*LF - ax*HCG)/(LF + LR);
 
         // Slip angles
-        double alphaf = Math.atan2(vy + LF*omega, vx) - delta;
-        double alphar = Math.atan2(vy + LR*omega, vx);
+        double alphaf = Math.atan2(vy + LF* yawRate, vx) - delta;
+        double alphar = Math.atan2(vy + LR* yawRate, vx);
 
         // Tyre velocities
-        double vtf = Math.sqrt((vy + LF*omega)*(vy + LF*omega) + vx*vx);
-        double vtr = Math.sqrt((vy - LR*omega)*(vy - LR*omega) + vx*vx);
+        double vtf = Math.sqrt((vy + LF* yawRate)*(vy + LF* yawRate) + vx*vx);
+        double vtr = Math.sqrt((vy - LR* yawRate)*(vy - LR* yawRate) + vx*vx);
 
         // Tyre velocity longitudinal components
         double vwxf = vtf * Math.cos(alphaf);
         double vwxr = vtr * Math.cos(alphar);
 
-        omegaf = rungeKutta(t, omegaf, new Differential() {
-            @Override
-            public double dydx(double x, double y) {
-                return 1.0/frontTyre.Iy * (frontTyre.Fx*frontTyre.R + frontTorque);
-            }
-        });
-
-        omegar = rungeKutta(t, omegar, new Differential() {
-            @Override
-            public double dydx(double x, double y) {
-                return 1.0/rearTyre.Iy * (rearTyre.Fx*rearTyre.R + rearTorque);
-            }
-        });
-
         double kappaf = vwxf > omegaf*frontTyre.R ? (vwxf - omegaf*frontTyre.R)/vwxf : (omegaf*frontTyre.R - vwxf)/vwxf;
+        double kappar = vwxr > omegaf*rearTyre.R ? (vwxr - omegaf*rearTyre.R)/vwxr : (omegaf*rearTyre.R - vwxr)/vwxr;
 
-
+        frontTyre.updateForces(Fzf, kappaf, alphaf);
+        rearTyre.updateForces(Fzr, kappar, alphar);
     }
 
 

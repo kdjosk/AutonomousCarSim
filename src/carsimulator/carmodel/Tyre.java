@@ -27,6 +27,7 @@ public class Tyre {
     double Kmu;
     double CSFZ;
     double mu0;
+    double gamma;
 
     public Tyre(String tyreProperties) {
         Fx = 0;
@@ -60,9 +61,10 @@ public class Tyre {
         K1 = Double.parseDouble(p.getProperty("K1"));
         CSFZ = Double.parseDouble(p.getProperty("CSFZ"));
         mu0 = Double.parseDouble(p.getProperty("mu0"));
+        gamma = Double.parseDouble(p.getProperty("gamma"));
     }
 
-    void updateForces(double Fz, double kappa, double alpha, double gamma) {
+    void updateForces(double Fz, double kappa, double alpha) {
 
         // Normal contact patch length
         double ap0 = 0.0768 * Math.sqrt(Fz * Fzt)/(Tw * (Tp + 5));
