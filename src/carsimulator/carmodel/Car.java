@@ -45,11 +45,11 @@ public class Car {
     double omegar;
 
     // Coordinates to fixed reference frame
-    double fixedX;
-    double fixedY;
+    public double fixedX;
+    public double fixedY;
 
 
-    public Car(String bodyProperties, String frontTyreProperties, String rearTyreProperties) {
+    public Car(String bodyProperties, String frontTyreProperties, String rearTyreProperties, double dt) {
         Properties p = new Properties();
         try(InputStream inputTyre = new FileInputStream(bodyProperties)){
             p.load(inputTyre);
@@ -66,13 +66,14 @@ public class Car {
 
         frontTyre = new Tyre(frontTyreProperties);
         rearTyre = new Tyre(rearTyreProperties);
+        this.dt = dt;
     }
 
     interface Differential {
         double dydx(double x, double[] y);
     }
 
-    double[] rungeKutta4(double x0, double[] y0, double h, Differential[] f) {
+    private double[] rungeKutta4(double x0, double[] y0, double h, Differential[] f) {
 
         int n = f.length;
         double[][] k = new double[5][n];
@@ -89,7 +90,6 @@ public class Car {
             }
 
             for(int j = 0; j < n; j++) {
-
                 k[i][j] = h * f[j].dydx(x0 + a[i] * h, y);
             }
 
@@ -125,11 +125,10 @@ public class Car {
 
         Differential[] f = new Differential[8];
 
-
         f[0] = (double x, double[] y) -> yawAngle;
-        f[1] = (double x, double[] y) -> 1/IZ * (LF * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta) - LR*Fyr));
-        f[2] = (double x, double[] y) -> 1/M * (Fxf*Math.cos(delta) - Fyf*Math.sin(delta) - Fxr) + y[3]*y[1];
-        f[3] = (double x, double[] y) -> 1/M * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta) + Fyr) + y[2]*y[1];
+        f[1] = (double x, double[] y) -> 1.0/IZ * (LF * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta) - LR*Fyr));
+        f[2] = (double x, double[] y) -> 1.0/M * (Fxf*Math.cos(delta) - Fyf*Math.sin(delta) - Fxr) + y[3]*y[1];
+        f[3] = (double x, double[] y) -> 1.0/M * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta) + Fyr) + y[2]*y[1];
         f[4] = (double x, double[] y) -> y[2]*Math.cos(y[0]) - y[3]*Math.sin(y[0]);
         f[5] = (double x, double[] y) -> y[2]*Math.sin(y[0]) + y[3]*Math.cos(y[0]);
         f[6] = (double x, double[] y) -> 1.0/frontTyre.Iy * (Fxf*frontTyre.R + frontTorque);
@@ -143,7 +142,7 @@ public class Car {
 
     }
 
-    public void updateTyreForces(double frontTorque, double rearTorque) {
+    private void updateTyreForces(double frontTorque, double rearTorque) {
 
         // Normal loads
         double Fzf = M*(G*LR - ax*HCG)/(LF + LR);

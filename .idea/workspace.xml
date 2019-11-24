@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03c32d67-e5b6-4f1b-ab20-01af82c864e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/krzysiu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarSimulator/carsimulator/carmodel/car.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarSimulator/carsimulator/carmodel/car.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CarSimulator/carsimulator/carmodel/tyre.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CarSimulator/carsimulator/carmodel/tyre.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/carsimulator/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/carsimulator/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/carsimulator/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/Play.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/Tyre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/Tyre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/car.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/car.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/car.properties" beforeDir="false" afterPath="$PROJECT_DIR$/res/car.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/carsimulator/carmodel/tyre.properties" beforeDir="false" afterPath="$PROJECT_DIR$/res/tyre.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +42,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res" />
       <recent name="$PROJECT_DIR$/src/carsimulator/carmodel" />
       <recent name="$PROJECT_DIR$/src/carsimulator/carmodel/tyre" />
     </key>
@@ -95,7 +99,7 @@
       <workItem from="1574163854186" duration="3457000" />
       <workItem from="1574417599525" duration="1121000" />
       <workItem from="1574502097479" duration="10327000" />
-      <workItem from="1574585575745" duration="9977000" />
+      <workItem from="1574585575745" duration="12179000" />
     </task>
     <servers />
   </component>
