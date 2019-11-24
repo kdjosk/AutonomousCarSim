@@ -60,10 +60,10 @@ public class Play extends BasicGameState{
         Input input = gc.getInput();
         double torque, steeringAngle;
         if(input.isKeyDown(Input.KEY_UP)) {
-            torque = 10;
+            torque = 50;
         }
         else if(input.isKeyDown(Input.KEY_DOWN)) {
-            torque = -10;
+            torque = -50;
         }
         else torque = 0;
 

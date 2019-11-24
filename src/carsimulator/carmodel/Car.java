@@ -163,6 +163,7 @@ public class Car {
         DecimalFormat df = new DecimalFormat("0.00");
         Arrays.stream(y).forEach(e -> System.out.print(df.format(e) + " "));
         System.out.print("Fxf: " + frontTyre.Fx + " Fyf: " + frontTyre.Fy + " Fxr: " + rearTyre.Fx + " Fyr: " + rearTyre.Fy + " ");
+        System.out.print("kappaf: " + frontTyre.kappa + " kappar: " + rearTyre.kappa + " alphaf: " + frontTyre.alpha + " alphar: " + rearTyre.alpha);
         System.out.println();
     }
 
@@ -170,7 +171,8 @@ public class Car {
 
         // Normal loads
         double Fzf = M*(G*LR - ax*HCG)/(LF + LR);
-        double Fzr = M*(G*LF - ax*HCG)/(LF + LR);
+        double Fzr = M*(G*LF + ax*HCG)/(LF + LR);
+        System.out.print("Fzf: " + Fzf + " Fzr: " + Fzr + " ");
 
         // Slip angles
         double alphaf = Math.atan2((vy + LF * yawRate), vx) - delta;
@@ -187,14 +189,18 @@ public class Car {
         double vwxr = vtr * Math.cos(alphar);
         double kappaf = 0, kappar = 0;
 
-        if(vwxf != 0 || omegaf != 0) {
-            kappaf = vwxf > omegaf*frontTyre.R ? (vwxf - omegaf*frontTyre.R)/vwxf : (omegaf*frontTyre.R - vwxf)/omegaf*frontTyre.R;
-            if(Math.abs(kappaf) >= 1) kappaf = (1 - 1e-5) * Math.signum(kappaf) ;
+        if(vwxf != 0) {
+            kappaf = (omegaf * frontTyre.R - vwxf) / vwxf;
         }
-        if(vwxr != 0 || omegar != 0) {
-            kappar = vwxr > omegar * rearTyre.R ? (vwxr - omegar * rearTyre.R) / vwxr : (omegar * rearTyre.R - vwxr) / omegar * rearTyre.R;
-            if(Math.abs(kappar) >= 1) kappar = (1 - 1e-5) * Math.signum(kappar) ;
+        else if (omegaf != 0) kappaf = 1.0;
+        else kappaf = 0;
+
+        if(vwxr != 0) {
+            kappar = (omegar * rearTyre.R - vwxr) / vwxr;
         }
+        else if (omegar != 0) kappar = 1.0;
+        else kappar = 0;
+
         frontTyre.updateForces(Fzf, kappaf, alphaf);
         rearTyre.updateForces(Fzr, kappar, alphar);
     }
