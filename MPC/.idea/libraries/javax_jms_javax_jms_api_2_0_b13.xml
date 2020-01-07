@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="javax.jms:javax.jms-api:2.0-b13" type="repository">
+    <properties maven-id="javax.jms:javax.jms-api:2.0-b13" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/jms/javax.jms-api/2.0-b13/javax.jms-api-2.0-b13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

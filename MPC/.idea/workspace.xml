@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02537dcf-fd3f-43fa-959a-0ec2c975a762" name="Default Changelist" comment="">
+      <change beforePath="$USER_HOME$/java/cobyla2/jcobyla/test/com/cureos/numerics/CobylaTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/java/cobyla2/jcobyla" />
+  </component>
+  <component name="ProjectId" id="1W4ZR9CsIGrzqdnhc0Syyu2sWz7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02537dcf-fd3f-43fa-959a-0ec2c975a762" name="Default Changelist" comment="" />
+      <created>1578410816555</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578410816555</updated>
+      <workItem from="1578410819619" duration="10377000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1051" y="214" width="800" height="677" key="#Project_Structure" timestamp="1578421097531">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1051" y="214" width="800" height="677" key="#Project_Structure/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578421097531" />
+    <state x="801" y="256" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1578416208984">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="801" y="256" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578416208984" />
+    <state x="766" y="288" width="735" height="484" key="FileChooserDialogImpl" timestamp="1578413628341">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="766" y="288" width="735" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578413628341" />
+    <state x="983" y="251" width="819" height="602" key="NewModule_or_Project.wizard" timestamp="1578413644539">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="983" y="251" width="819" height="602" key="NewModule_or_Project.wizard/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578413644539" />
+    <state x="886" y="130" width="1024" height="845" key="SettingsEditor" timestamp="1578421176570">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="886" y="130" width="1024" height="845" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578421176570" />
+    <state x="1070" y="334" width="646" height="338" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578421167032">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1070" y="334" width="646" height="338" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578421167032" />
+  </component>
+</project>
