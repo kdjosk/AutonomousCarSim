@@ -23,7 +23,7 @@ public class Publisher {
 
             ts = tc.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
 
-            t = (Topic) ctx.lookup("myTopic");
+            t = (Topic) ctx.lookup("jms/stateTopic");
 
             tpub = ts.createPublisher(t);
 

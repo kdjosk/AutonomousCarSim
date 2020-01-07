@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0de64b40-ad46-427a-b33f-5efe51d55b19" name="Default Changelist" comment="" />
+    <list default="true" id="0de64b40-ad46-427a-b33f-5efe51d55b19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/car.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tyre.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nav/MapState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPC/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPC/src/comms/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/src/comms/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPC/src/nav/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/src/nav/Controls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VehiclePhysicsSimulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VehiclePhysicsSimulator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comms/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/comms/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Tyre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Tyre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nav/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav/Controls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Simulation.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +32,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1W4ZNFB63sB7XA7WqbWZGsV1doh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,15 +48,20 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/slick.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="nav" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -60,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578410785431</updated>
-      <workItem from="1578410788253" duration="4916000" />
+      <workItem from="1578410788253" duration="8653000" />
     </task>
     <servers />
   </component>
@@ -80,13 +107,13 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="615" y="296" width="735" height="513" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578424173924" />
-    <state x="476" y="130" width="1024" height="845" key="SettingsEditor" timestamp="1578424177648">
+    <state x="476" y="130" width="1024" height="845" key="SettingsEditor" timestamp="1578426786036">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="476" y="130" width="1024" height="845" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578424177648" />
-    <state x="660" y="448" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578423274044">
+    <state x="476" y="130" width="1024" height="845" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578426786036" />
+    <state x="660" y="448" width="646" height="224" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578426782511">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="660" y="448" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578423274044" />
+    <state x="660" y="448" width="646" height="224" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578426782511" />
   </component>
 </project>

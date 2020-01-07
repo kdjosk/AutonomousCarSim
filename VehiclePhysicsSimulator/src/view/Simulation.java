@@ -1,16 +1,30 @@
 package view;
 
+import controller.Controller;
+import model.Car;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
-import java.security.BasicPermission;
-
 public class Simulation extends BasicGameState {
 
-    public Simulation(int state){}
+    Image carImage, mapImage;
+    final float initialMapX, initialMapY, pxPerMeter;
+    Controller controller;
+
+    {
+        initialMapX = 2838;
+        initialMapY = 3542;
+        pxPerMeter = 57.23f;
+    }
+
+
+    public Simulation(int state){
+        controller = new Controller(1.0/ViewManager.maxFPS);
+    }
 
     @Override
     public int getID() {

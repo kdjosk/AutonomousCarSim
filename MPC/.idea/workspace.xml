@@ -2,6 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02537dcf-fd3f-43fa-959a-0ec2c975a762" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/.idea/libraries/org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/res/car.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/res/tyre.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/nav/MapState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comms/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/comms/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nav/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav/Controls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/VehiclePhysicsSimulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/VehiclePhysicsSimulator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/comms/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/comms/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/model/Tyre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/model/Tyre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/nav/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/nav/Controls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/view/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/view/Simulation.java" afterDir="false" />
       <change beforePath="$USER_HOME$/java/cobyla2/jcobyla/test/com/cureos/numerics/CobylaTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +34,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/java/cobyla2/jcobyla" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1W4ZR9CsIGrzqdnhc0Syyu2sWz7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -65,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578410816555</updated>
-      <workItem from="1578410819619" duration="10377000" />
+      <workItem from="1578410819619" duration="11982000" />
     </task>
     <servers />
   </component>
