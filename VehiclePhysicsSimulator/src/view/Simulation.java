@@ -12,18 +12,12 @@ import org.newdawn.slick.state.StateBasedGame;
 public class Simulation extends BasicGameState {
 
     Image carImage, mapImage;
-    final float initialMapX, initialMapY, pxPerMeter;
+    public final static float initialMapX = 2838, initialMapY = 3542;
     Controller controller;
-
-    {
-        initialMapX = 2838;
-        initialMapY = 3542;
-        pxPerMeter = 57.23f;
-    }
 
 
     public Simulation(int state){
-        controller = new Controller(1.0/ViewManager.maxFPS);
+
     }
 
     @Override
@@ -33,6 +27,9 @@ public class Simulation extends BasicGameState {
 
     @Override
     public void init(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException {
+        controller = new Controller(1.0/ViewManager.maxFPS);
+        carImage = new Image("res/carImage.png");
+        mapImage = new Image("res/trackImage.png");
 
     }
 

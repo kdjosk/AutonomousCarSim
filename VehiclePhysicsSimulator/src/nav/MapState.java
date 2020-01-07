@@ -16,6 +16,22 @@ public class MapState implements Serializable {
         this.y = y;
     }
 
+    public void setV(double v) {
+        this.v = v;
+    }
+
+    public void setPsi(double psi) {
+        this.psi = psi;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+
     public double getV() {
         return v;
     }

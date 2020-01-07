@@ -9,6 +9,8 @@ public class ViewManager extends StateBasedGame{
     public static final int menu = 0;
     public static final int simulation = 1;
     public static final int maxFPS = 300;
+    public static final int width = 1280;
+    public static final int height = 720;
 
     public ViewManager(String gamename) {
         super(gamename);
