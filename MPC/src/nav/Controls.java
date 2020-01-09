@@ -1,7 +1,7 @@
 package nav;
 
-import org.apache.commons.math3.geometry.euclidean.twod.Vector2D;
 import java.io.Serializable;
+import org.apache.commons.math3.geometry.euclidean.twod.Vector2D;
 
 public class Controls implements Serializable {
     double delta;
@@ -40,3 +40,4 @@ public class Controls implements Serializable {
     }
 
 }
+

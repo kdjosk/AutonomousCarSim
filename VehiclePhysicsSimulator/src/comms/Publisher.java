@@ -1,5 +1,7 @@
 package comms;
 
+import nav.MapState;
+
 import javax.jms.*;
 import javax.naming.InitialContext;
 import java.io.Serializable;
@@ -27,14 +29,13 @@ public class Publisher {
 
             tpub = ts.createPublisher(t);
 
-            objectMessage = ts.createObjectMessage();
-
         } catch(Exception e){System.out.println(e.toString());}
     }
 
     public void publishMessage(Serializable msg){
         try{
             System.out.println("Attempting to send message");
+            objectMessage = ts.createObjectMessage();
             objectMessage.setObject(msg);
             tpub.publish(objectMessage);
             System.out.println("Message successfully sent");

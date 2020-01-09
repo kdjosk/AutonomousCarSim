@@ -20,7 +20,9 @@ public class Car {
     final double G;
     // Yaw inertia
     final double IZ;
-    // Portion of torque applied on front wheels
+    // Center of rotation normalized distance from the front axis
+    final double COR;
+    // Portion of torque applied on front axis
     double GAMMA;
 
     // Tyres
@@ -69,6 +71,7 @@ public class Car {
         G = Double.parseDouble(p.getProperty("G"));
         IZ = Double.parseDouble(p.getProperty("IZ"));
         GAMMA = Double.parseDouble(p.getProperty("GAMMA"));
+        COR = Double.parseDouble(p.getProperty("COR"));
 
         frontTyre = new Tyre(frontTyreProperties);
         rearTyre = new Tyre(rearTyreProperties);
@@ -125,12 +128,17 @@ public class Car {
 
     public void updateModel(Controls controls) {
 
-        double frontTorque = controls.getAcceleration() * M * GAMMA;
-        double rearTorque = controls.getAcceleration() * M * (1 - GAMMA);
+        double frontTorque = 0;
+        double rearTorque = 0;
+
+        if(controls != null){
+            frontTorque = controls.getAcceleration() * M * GAMMA;
+            rearTorque = controls.getAcceleration() * M * (1 - GAMMA);
+            delta = controls.getDelta();
+        }
 
         this.updateTyreForces();
 
-        delta = controls.getDelta();
         double Fxf = frontTyre.Fx;
         double Fyf = frontTyre.Fy;
         double Fxr = rearTyre.Fx;
@@ -147,7 +155,7 @@ public class Car {
         6 - omegaf
         7 - omegar
         */
-        System.out.println("ft: " + frontTorque + " rt: " + rearTorque);
+        //System.out.println("ft: " + frontTorque + " rt: " + rearTorque);
 
         Differential[] f = new Differential[8];
 
@@ -157,8 +165,10 @@ public class Car {
         f[3] = (double[] y) -> (1.0/M) * (-Fyf*Math.cos(delta) + Fxf*Math.sin(delta) - Fyr) - y[2]*y[1];
         f[4] = (double[] y) -> -y[3]*Math.sin(y[0]) - y[2]*Math.cos(y[0]);
         f[5] = (double[] y) -> -y[3]*Math.cos(y[0]) + y[2]*Math.sin(y[0]);
-        f[6] = (double[] y) -> (1.0/frontTyre.Iy) * (Fxf*frontTyre.R + frontTorque);
-        f[7] = (double[] y) -> (1.0/rearTyre.Iy) * (Fxr*rearTyre.R + rearTorque);
+        double finalFrontTorque = frontTorque;
+        f[6] = (double[] y) -> (1.0/frontTyre.Iy) * (Fxf*frontTyre.R + finalFrontTorque);
+        double finalRearTorque = rearTorque;
+        f[7] = (double[] y) -> (1.0/rearTyre.Iy) * (Fxr*rearTyre.R + finalRearTorque);
 
         double[] y = {yawAngle, yawRate, vx, vy, fixedX, fixedY, omegaf, omegar};
         y = rungeKutta4(y, dt, f);
@@ -179,11 +189,11 @@ public class Car {
         t += dt;
 
 
-        DecimalFormat df = new DecimalFormat("0.00");
-        Arrays.stream(y).forEach(e -> System.out.print(df.format(e) + " "));
-        System.out.print("Fxf: " + df.format(frontTyre.Fx) + " Fyf: " + df.format(frontTyre.Fy) + " Fxr: " +  df.format(rearTyre.Fx) + " Fyr: " +  df.format(rearTyre.Fy) + " ");
-        System.out.print("kappaf: " + frontTyre.kappa + " kappar: " + rearTyre.kappa + " alphaf: " + frontTyre.alpha + " alphar: " + rearTyre.alpha + " delta: " + delta);
-        System.out.println();
+       // DecimalFormat df = new DecimalFormat("0.00");
+       // Arrays.stream(y).forEach(e -> System.out.print(df.format(e) + " "));
+       // System.out.print("Fxf: " + df.format(frontTyre.Fx) + " Fyf: " + df.format(frontTyre.Fy) + " Fxr: " +  df.format(rearTyre.Fx) + " Fyr: " +  df.format(rearTyre.Fy) + " ");
+       // System.out.print("kappaf: " + frontTyre.kappa + " kappar: " + rearTyre.kappa + " alphaf: " + frontTyre.alpha + " alphar: " + rearTyre.alpha + " delta: " + delta);
+       // System.out.println();
     }
 
     private void updateTyreForces() {
@@ -208,7 +218,7 @@ public class Car {
         else{
             alphaf = Math.atan(frontVy/Math.abs(vx)) - delta;
             alphar = Math.atan(rearVy/Math.abs(vx));
-            System.out.println("frontVy: " + frontVy + " rearVy: " + rearVy);
+            //System.out.println("frontVy: " + frontVy + " rearVy: " + rearVy);
             if(Math.abs(alphaf) > Math.PI/2) alphaf = Math.PI/2.0*Math.signum(alphaf);
             if(Math.abs(alphar) > Math.PI/2) alphar = Math.PI/2.0*Math.signum(alphar);
         }
@@ -231,14 +241,22 @@ public class Car {
             kappar = vwxr > omegar * rearTyre.R ? (vwxr - omegar * rearTyre.R) / vwxr : (vwxr - omegar * rearTyre.R) / omegar * rearTyre.R;
             if(Math.abs(kappar) >= 1) kappar = (1 - 1e-5) * Math.signum(kappar) ;
         }
-        System.out.println("front tyre");
+        //System.out.println("front tyre");
         frontTyre.updateForces(Fzf, kappaf, alphaf);
-        System.out.println("rear tyre");
+        //System.out.println("rear tyre");
         rearTyre.updateForces(Fzr, kappar, alphar);
     }
 
     public double getVelocity(){
         return Math.sqrt(vx*vx + vy*vy);
+    }
+
+    public double getCenterOfRotationX(){
+        return COR;
+    }
+
+    public double getCenterOfRotationY(){
+        return 0.5;
     }
 
 }

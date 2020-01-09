@@ -9,6 +9,7 @@ import nav.Path;
 import org.apache.commons.math3.geometry.euclidean.twod.Vector2D;
 
 import javax.jms.JMSException;
+import javax.jms.ObjectMessage;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -179,15 +180,21 @@ public class Mpc {
         Path path = new Path(pathFile);
         Publisher controlsPub = new Publisher();
         Subscriber mapStateSub = new Subscriber();
-        MapState mapState = null;
+        MapState mapState;
+        ObjectMessage msg;
 
         while(true){
             try{
-                mapState = (MapState) mapStateSub.getMessage().getObject();
-                double[] pathCoeffs = path.getPathCoeffs(mapState.getX(), mapState.getY(),
-                        mapState.getPsi(), mpc.pathPoints);
-                Controls controls = mpc.getControls(mapState.getV(), pathCoeffs);
-                controlsPub.publishMessage(controls);
+                msg = mapStateSub.getMessage();
+                System.out.println(msg == null);
+                if(msg != null){
+                    System.out.println("jołjoł");
+                    mapState = (MapState) msg.getObject();
+                    double[] pathCoeffs = path.getPathCoeffs(mapState.getX(), mapState.getY(),
+                            mapState.getPsi(), mpc.pathPoints);
+                    Controls controls = mpc.getControls(mapState.getV(), pathCoeffs);
+                    controlsPub.publishMessage(controls);
+                }
             } catch(JMSException e){System.out.println(e.toString());}
         }
     }

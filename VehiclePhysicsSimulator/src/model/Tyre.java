@@ -90,7 +90,7 @@ public class Tyre {
         double temp2 = Math.sqrt(Math.pow(Ks * Math.tan(alpha), 2) + Math.pow(KcPrim * kappa, 2));
         if(temp2 != 0) {
 
-            System.out.println(f(sigma));
+            //System.out.println(f(sigma));
 
             Fy = f(sigma) * Ks * Math.tan(alpha) / temp2 + Ygamma * gamma;
             Fy *= mu * Fz;

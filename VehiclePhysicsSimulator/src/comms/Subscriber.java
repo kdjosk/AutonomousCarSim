@@ -15,18 +15,20 @@ public class Subscriber {
 
     public Subscriber(){
         try {
-            InitialContext ctx = new InitialContext();
-            TopicConnectionFactory f = (TopicConnectionFactory) ctx.lookup("myTopicConnectionFactory");
-            TopicConnection con = f.createTopicConnection();
-            con.start();
+            ctx = new InitialContext();
+            tcf = (TopicConnectionFactory) ctx.lookup("myTopicConnectionFactory");
+            tc = tcf.createTopicConnection();
+            tc.start();
 
-            TopicSession ses = con.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
+            ts = tc.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
 
-            Topic t = (Topic) ctx.lookup("myTopic");
+            t = (Topic) ctx.lookup("jms/controlsTopic");
 
-            TopicSubscriber receiver = ses.createSubscriber(t);
+            tsub = ts.createSubscriber(t);
 
-            Listener listener = new Listener();
+            listener = new Listener();
+
+            tsub.setMessageListener(listener);
 
             System.out.println("Subscriber is ready, waiting for messages...");
 

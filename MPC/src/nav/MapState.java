@@ -1,6 +1,8 @@
 package nav;
 
-public class MapState {
+import java.io.Serializable;
+
+public class MapState implements Serializable {
     // coordinates in map reference frame
     double v;
     double psi;
