@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../MPC/MPC.iml" filepath="$PROJECT_DIR$/../MPC/MPC.iml" />
       <module fileurl="file://$PROJECT_DIR$/VehiclePhysicsSimulator.iml" filepath="$PROJECT_DIR$/VehiclePhysicsSimulator.iml" />
-      <module fileurl="file://$USER_HOME$/java/cobyla2/cobyla2.iml" filepath="$USER_HOME$/java/cobyla2/cobyla2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cobyla2/cobyla2.iml" filepath="$PROJECT_DIR$/../cobyla2/cobyla2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../glassfish5/glassfish5.iml" filepath="$PROJECT_DIR$/../glassfish5/glassfish5.iml" />
     </modules>
   </component>
 </project>
