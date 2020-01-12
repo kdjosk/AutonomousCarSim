@@ -181,24 +181,8 @@ public class Car {
         ay = (y[3] - vy)/dt;
         yawAngle = y[0]; yawRate = y[1]; vx = y[2]; vy = y[3]; fixedX = y[4]; fixedY = y[5]; omegaf = y[6]; omegar = y[7];
 
-       /* yawAngle += yawRate*dt;
-        yawRate += (1.0/IZ) * (LF * (Fyf*Math.cos(delta) - Fxf*Math.sin(delta)) - LR*Fyr) * dt;
-        vx += ((1.0/M) * (Fxf*Math.cos(delta) + Fyf*Math.sin(delta) - Fxr) + vy*yawRate)*dt;
-        vy += ((1.0/M) * (-Fyf*Math.cos(delta) + Fxf*Math.sin(delta) - Fyr) - vx*yawRate)*dt;
-        fixedX += (vx*Math.cos(yawAngle) - vy*Math.sin(yawAngle) )* dt;
-        fixedY += (vx*Math.sin(yawAngle) + vy*Math.cos(yawAngle)) * dt;
-        omegaf += (1.0/frontTyre.Iy) * (Fxf*frontTyre.R + frontTorque) * dt;
-        omegar += (1.0/rearTyre.Iy) * (Fxr*rearTyre.R + rearTorque) * dt;
-
-        double[] y = {yawAngle, yawRate, vx, vy, fixedX, fixedY, omegaf, omegar};*/
         t += dt;
 
-
-       // DecimalFormat df = new DecimalFormat("0.00");
-       // Arrays.stream(y).forEach(e -> System.out.print(df.format(e) + " "));
-       // System.out.print("Fxf: " + df.format(frontTyre.Fx) + " Fyf: " + df.format(frontTyre.Fy) + " Fxr: " +  df.format(rearTyre.Fx) + " Fyr: " +  df.format(rearTyre.Fy) + " ");
-       // System.out.print("kappaf: " + frontTyre.kappa + " kappar: " + rearTyre.kappa + " alphaf: " + frontTyre.alpha + " alphar: " + rearTyre.alpha + " delta: " + delta);
-       // System.out.println();
     }
 
     private void updateTyreForces() {
@@ -264,4 +248,28 @@ public class Car {
         return 0.5;
     }
 
+
+    public double getYawAngle() {
+        return yawAngle;
+    }
+
+    public void setYawAngle(double yawAngle) {
+        this.yawAngle = yawAngle;
+    }
+
+    public double getFixedX() {
+        return fixedX;
+    }
+
+    public void setFixedX(double fixedX) {
+        this.fixedX = fixedX;
+    }
+
+    public double getFixedY() {
+        return fixedY;
+    }
+
+    public void setFixedY(double fixedY) {
+        this.fixedY = fixedY;
+    }
 }

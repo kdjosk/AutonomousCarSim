@@ -57,12 +57,12 @@ public class Controller {
         }
 
         car.updateModel(controls);
-        mapState.setX(Simulation.initialMapX + car.fixedX*pxPerMeter);
-        mapState.setY(Simulation.initialMapY - car.fixedY*pxPerMeter);
-        mapState.setPsi(car.yawAngle);
+        mapState.setX(Simulation.initialMapX + car.getFixedX()*pxPerMeter);
+        mapState.setY(Simulation.initialMapY - car.getFixedY()*pxPerMeter);
+        mapState.setPsi(car.getYawAngle());
         mapState.setV(car.getVelocity());
 
-        mapState.printInfo();
+        //mapState.printInfo();
 
     }
 
@@ -103,8 +103,8 @@ public class Controller {
                 x = -x * pxPerMeter;
                 y = y * pxPerMeter;
 
-                x = Math.cos(car.yawAngle) * x - Math.sin(car.yawAngle) * y;
-                y = Math.cos(car.yawAngle) * y + Math.sin(car.yawAngle) * x;
+                x = Math.cos(car.getYawAngle()) * x - Math.sin(car.getYawAngle()) * y;
+                y = Math.cos(car.getYawAngle()) * y + Math.sin(car.getYawAngle()) * x;
 
                 x = x + ViewManager.width/2.0;
                 y = y + ViewManager.height/2.0;

@@ -25,6 +25,7 @@ public class Mpc {
     double lf;
     double vref;
     double amax;
+    double deltamax;
     double wa;
     double wcte;
     double weps;
@@ -63,10 +64,12 @@ public class Mpc {
         lf = Double.parseDouble(p.getProperty("lf"));
         vref = Double.parseDouble(p.getProperty("vref"));
         amax = Double.parseDouble(p.getProperty("amax"));
+        deltamax = Double.parseDouble(p.getProperty("deltamax"));
         wa = Double.parseDouble(p.getProperty("wa"));
         wcte = Double.parseDouble(p.getProperty("wcte"));
         weps = Double.parseDouble(p.getProperty("weps"));
         wv = Double.parseDouble(p.getProperty("wv"));
+
         wdelta = Double.parseDouble(p.getProperty("wdelta"));
         wdeltavar = Double.parseDouble(p.getProperty("wdeltavar"));
         wavar = Double.parseDouble(p.getProperty("wavar"));
@@ -77,7 +80,7 @@ public class Mpc {
         rhobeg = Double.parseDouble(p.getProperty("rhobeg"));
         rhoend = Double.parseDouble(p.getProperty("rhoend"));
         pathPoints = Integer.parseInt(p.getProperty("pathPoints"));
-        constraints = predictionHorizon;
+        constraints = steeringVars * predictionHorizon;
 
     }
 
@@ -127,8 +130,8 @@ public class Mpc {
                 objVal +=  5 * Math.pow(y1 - (y0 + vavg * dt * (psi0 + beta0)), 2);
                 objVal +=  5 * Math.pow(psi1 - (psi0 + vavg * dt * beta0/lr), 2);
                 objVal +=  5 * Math.pow(v1 - (v0 + a0 * dt), 2);
-                objVal +=  5 * Math.pow(Math.abs(delta0) - 0.1, 2);
                 con[t] = amax - Math.abs(a0);
+                con[t + 1] = deltamax - Math.abs(delta0);
             }
 
             objVal += 10 * Math.pow(x[X], 2);
@@ -199,7 +202,7 @@ public class Mpc {
                     System.out.println("a: " + controls.getAcceleration() + " delta: " + controls.getDelta() + " v: " + controls.getVelocity());
                     controlsPub.publishMessage(controls);
                 }
-            } catch(JMSException e){System.out.println(e.toString());}
+            } catch(JMSException e){e.printStackTrace();}
         }
     }
 

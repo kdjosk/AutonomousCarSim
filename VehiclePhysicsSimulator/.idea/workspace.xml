@@ -2,46 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0de64b40-ad46-427a-b33f-5efe51d55b19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/view/ConfirmBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/view/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/MPC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/MPC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/res/mpc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/res/mpc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/res/path.csv" beforeDir="false" afterPath="$PROJECT_DIR$/res/path.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/src/comms/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/src/autonomous/comms/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/src/comms/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/src/autonomous/comms/Publisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/src/comms/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/src/autonomous/comms/Subscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/src/mpc/Mpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/src/autonomous/mpc/Mpc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/src/nav/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/nav/Controls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/src/nav/MapState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/nav/MapState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MPC/src/nav/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/src/autonomous/nav/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MPC/src/autonomous/pid/Pid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/pid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPC/src/autonomous/mpc/Mpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/src/autonomous/mpc/Mpc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VehiclePhysicsSimulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VehiclePhysicsSimulator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/comms/Listener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/comms/Publisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/comms/Subscriber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/controller/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/model/Car$Differential.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/model/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/model/Tyre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/nav/Controls.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/nav/MapState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/view/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/view/Simulation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/view/ViewManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comms/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/comms/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comms/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/comms/Publisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comms/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/comms/Subscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Tyre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/model/Tyre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nav/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/src/autonomous/nav/Controls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nav/MapState.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPC/src/autonomous/nav/MapState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/view/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ViewManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/view/ViewManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MPC/autonomous/mpc/Mpc$CobylaCalcfc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MPC/autonomous/mpc/Mpc$CobylaCalcfc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MPC/autonomous/mpc/Mpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MPC/autonomous/mpc/Mpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/guivehiclephysicssim/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/guivehiclephysicssim/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/guivehiclephysicssim/nav/Controls.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/guivehiclephysicssim/nav/Controls.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/guivehiclephysicssim/view/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VehiclePhysicsSimulator/guivehiclephysicssim/view/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/mpc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/res/mpc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guivehiclephysicssim/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guivehiclephysicssim/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guivehiclephysicssim/nav/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/nav/Controls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guivehiclephysicssim/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guivehiclephysicssim/view/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +104,7 @@
       <workItem from="1578753021493" duration="2641000" />
       <workItem from="1578756880156" duration="1316000" />
       <workItem from="1578759789874" duration="15298000" />
-      <workItem from="1578813083108" duration="18534000" />
+      <workItem from="1578813083108" duration="25019000" />
     </task>
     <servers />
   </component>
@@ -154,10 +128,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="650" y="357" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578813242887" />
-    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1578835020483">
+    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1578848789308">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578835020483" />
+    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578848789308" />
     <state x="834" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578753060033">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -174,22 +148,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="615" y="296" width="735" height="513" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578824012318" />
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1578836612388">
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1578848654062">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578836612388" />
-    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1578836612387">
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578848654062" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1578848654062">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578836612387" />
-    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1578836612387">
+    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578848654062" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1578848654062">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578836612387" />
-    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1578836612388">
+    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578848654062" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1578848654062">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578836612388" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578848654062" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1578826125125">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -226,6 +200,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="528" y="291" width="920" height="522" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578769740563" />
+    <state x="1920" y="0" width="1562" height="705" maximized="true" key="dock-window-1" timestamp="1578839162903">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="0" width="1562" height="705" maximized="true" key="dock-window-1/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578839162903" />
     <state x="297" y="153" width="1372" height="798" key="new project wizard" timestamp="1578755671588">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -253,46 +231,10 @@
           <line>16</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/guivehiclephysicssim/controller/Controller.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/guivehiclephysicssim/controller/Controller.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/guivehiclephysicssim/controller/Controller.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/guivehiclephysicssim/view/Simulation.java</url>
           <line>45</line>
           <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/guivehiclephysicssim/controller/Controller.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/guivehiclephysicssim/controller/Controller.java</url>
-          <line>76</line>
-          <properties class="guivehiclephysicssim.controller.Controller" method="getMapY">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/guivehiclephysicssim/controller/Controller.java</url>
-          <line>72</line>
-          <properties class="guivehiclephysicssim.controller.Controller" method="getMapX">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,5 +1,6 @@
 package guivehiclephysicssim.view;
 
+import autonomous.pid.Pid;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.beans.binding.BooleanBinding;
@@ -170,12 +171,6 @@ public class Main extends Application {
             buttonStartSimulation.setDisable(true);
         });
 
-        buttonStartController.setOnAction(e -> {
-            Thread ctrlThread = new Thread(() -> Mpc.main(null));
-            ctrlThread.start();
-            buttonStartController.setDisable(true);
-        });
-
         final ToggleGroup chooseController = new ToggleGroup();
         RadioButton chooseMpc = new RadioButton("MPC");
         chooseMpc.setToggleGroup(chooseController);
@@ -187,6 +182,21 @@ public class Main extends Application {
         HBox chooseControllerMenu = new HBox();
         chooseControllerMenu.getChildren().addAll(chooseMpc, choosePid);
         chooseControllerMenu.setAlignment(Pos.CENTER);
+
+        buttonStartController.setOnAction(e -> {
+            Thread ctrlThread = null;
+            if(chooseMpc.isSelected()){
+                ctrlThread = new Thread(() -> Mpc.main(null));
+
+            }
+            else if(choosePid.isSelected()){
+                ctrlThread = new Thread(() -> Pid.main(null));
+            }
+            ctrlThread.start();
+            buttonStartController.setDisable(true);
+        });
+
+
 
         menu.getChildren().addAll(buttonStartSimulation, buttonStartController, buttonStartServer, chooseControllerMenu, buttonLoadPath, buttonLoadMap, buttonChooseStartPoint, buttonQuit);
         menu.setAlignment(Pos.CENTER);

@@ -15,8 +15,10 @@ public class Controls implements Serializable {
         this.delta = delta;
         this.velocity = velocity;
         this.acceleration = acceleration;
-        this.predictedPath = predictedPath.clone();
-        this.polynomialFit = polynomialFit.clone();
+        if(predictedPath != null)
+            this.predictedPath = predictedPath.clone();
+        if(polynomialFit != null)
+            this.polynomialFit = polynomialFit.clone();
     }
 
 
