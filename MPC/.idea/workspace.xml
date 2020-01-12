@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02537dcf-fd3f-43fa-959a-0ec2c975a762" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/IdeaProjects.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/path.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/.idea/libraries/lib.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/java/cobyla2/jcobyla/jcobyla.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MPC/comms/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MPC/comms/Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MPC/comms/Publisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MPC/comms/Publisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MPC/comms/Subscriber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MPC/comms/Subscriber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MPC/mpc/Mpc$CobylaCalcfc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MPC/mpc/Mpc$CobylaCalcfc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MPC/mpc/Mpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MPC/mpc/Mpc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MPC/nav/Controls.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MPC/nav/Controls.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MPC/nav/mapState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comms/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/comms/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/comms/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/comms/Subscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mpc/Mpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mpc/Mpc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nav/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav/Controls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nav/MapState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav/MapState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/.idea/libraries/lwjgl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/.idea/libraries/lwjgl.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/VehiclePhysicsSimulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/VehiclePhysicsSimulator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/res/car.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/res/car.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/comms/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/comms/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/comms/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/comms/Publisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/comms/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/comms/Subscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/model/Tyre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/model/Tyre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/view/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclePhysicsSimulator/src/view/Simulation.java" afterDir="false" />
       <change beforePath="$USER_HOME$/java/cobyla2/jcobyla/test/com/cureos/numerics/CobylaTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +80,8 @@
       <option name="presentableId" value="Default" />
       <updated>1578410816555</updated>
       <workItem from="1578410819619" duration="13206000" />
-      <workItem from="1578557416209" duration="5109000" />
+      <workItem from="1578557416209" duration="5711000" />
+      <workItem from="1578570659058" duration="73000" />
     </task>
     <servers />
   </component>
@@ -137,22 +112,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="766" y="288" width="735" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578564561012" />
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1578565826775">
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1578570616036">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578565826775" />
-    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1578565826774">
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578570616036" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1578570616036">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578565826774" />
-    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1578565826774">
+    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578570616036" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1578570616036">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578565826774" />
-    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1578565826774">
+    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578570616036" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1578570616036">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578565826774" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578570616036" />
     <state x="983" y="251" width="819" height="602" key="NewModule_or_Project.wizard" timestamp="1578413644539">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -161,9 +136,17 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="419" y="138" width="1024" height="845" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578563181419" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1578570664875">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578570664875" />
     <state x="1070" y="334" width="646" height="338" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578421167032">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1070" y="334" width="646" height="338" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578421167032" />
+    <state x="302" y="154" width="1372" height="796" key="new project wizard" timestamp="1578570701768">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="302" y="154" width="1372" height="796" key="new project wizard/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578570701768" />
   </component>
 </project>
