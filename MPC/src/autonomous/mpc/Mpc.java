@@ -20,35 +20,32 @@ import java.util.Properties;
 
 public class Mpc {
 
-    double dt;
-    double lr;
-    double lf;
-    double vref;
-    double amax;
-    double deltamax;
-    double wa;
-    double wcte;
-    double weps;
-    double wv;
-    double wdelta;
-    double wdeltavar;
-    double wavar;
-    double[] pathCoeffs;
-    double initialV;
-    int stateVars;
-    int steeringVars;
-    int predictionHorizon;
-    int initialDelta;
-    int initialA;
-    int constraints;
-    int nfevals;
-    int pathPoints;
-    double rhobeg, rhoend;
-    final int modelEquations = 5;
+    private double dt;
+    private double lr;
+    private double lf;
+    private double vref;
+    private double amax;
+    private double deltamax;
+    private double wa;
+    private double wcte;
+    private double weps;
+    private double wv;
+    private double wdelta;
+    private double wdeltavar;
+    private double wavar;
+    private double[] pathCoeffs;
+    private double initialV;
+    private int stateVars;
+    private int steeringVars;
+    private int predictionHorizon;
+    private int constraints;
+    private int nfevals;
+    private int pathPoints;
+    private double rhobeg, rhoend;
     // order of state variables
-    final int X = 0, Y = 1, PSI = 2, V = 3;
+    private final int X = 0, Y = 1, PSI = 2, V = 3;
     // order of steering variables
-    final int DELTA = 0, A = 1;
+    private final int DELTA = 0, A = 1;
 
     public Mpc(String mpcProperties){
 
@@ -159,12 +156,6 @@ public class Mpc {
         CobylaCalcfc calcfc = new CobylaCalcfc();
         CobylaExitStatus result = Cobyla.FindMinimum(calcfc, (stateVars + steeringVars) * (predictionHorizon + 1),
                 constraints, vars, rhobeg, rhoend, 1, nfevals);
-
-/*
-        System.out.println("Predicted steering: \n");
-        for(int i = 0; i < predictionHorizon; ++i){
-            System.out.println(vars[steeringStart + steeringVars * i + DELTA] + ", " + vars[steeringStart + steeringVars * i + A] + "\n");
-        }*/
 
         Vector2D[] predictedPath = new Vector2D[predictionHorizon];
         Vector2D[] polynomialPath = new Vector2D[predictionHorizon];

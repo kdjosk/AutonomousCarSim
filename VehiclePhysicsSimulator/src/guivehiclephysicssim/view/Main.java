@@ -24,10 +24,10 @@ import java.util.Optional;
 
 public class Main extends Application {
 
-    Stage window;
-    String pathFilePath;
-    String mapFilePath;
-    String startX, startY, startAngle;
+    private Stage window;
+    private String pathFilePath;
+    private String mapFilePath;
+    private String startX, startY, startAngle;
 
     public static void main(String[] args){
         launch(args);

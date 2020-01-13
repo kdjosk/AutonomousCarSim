@@ -6,30 +6,31 @@ import org.apache.commons.math3.geometry.euclidean.twod.Vector2D;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Path {
 
-    ArrayList<Vector2D> pathPoints;
+    private List<Vector2D> pathPoints;
 
     public Path(String pointsFile){
 
         pathPoints = new ArrayList<>();
         String row = "";
-        try {
-            BufferedReader csvReader = new BufferedReader(new FileReader(pointsFile));
+        try (BufferedReader csvReader = new BufferedReader(new FileReader(pointsFile))){
             while((row = csvReader.readLine()) != null){
                 String[] xy = row.split(",");
                 Vector2D pathPoint = new Vector2D(Double.parseDouble(xy[0]), Double.parseDouble(xy[1]));
                 pathPoints.add(pathPoint);
             }
-        }
-        catch(java.io.FileNotFoundException e){
-            System.out.println("File not found\n");
-        }
-        catch(java.io.IOException e){
-            System.out.println("Nothing to read\n");
+        } catch(java.io.FileNotFoundException e){
+            Logger.getLogger(Path.class.getName()).log(Level.SEVERE, e.getStackTrace().toString());
+        } catch(java.io.IOException e){
+            Logger.getLogger(Path.class.getName()).log(Level.SEVERE, e.getStackTrace().toString());
         }
     }
 

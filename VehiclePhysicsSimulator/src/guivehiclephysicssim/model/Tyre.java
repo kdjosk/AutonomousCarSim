@@ -7,29 +7,9 @@ import java.util.Properties;
 
 public class Tyre {
 
-    public double Fx, Fy, Mz, alpha, kappa;
-    double R;
-    double Iy;
-    double Tw;
-    double Tp;
-    double Fzt;
-    double C1;
-    double C2;
-    double C3;
-    double C4;
-    double G1;
-    double G2;
-    double A0;
-    double A1;
-    double A2;
-    double A3;
-    double A4;
-    double Ka;
-    double K1;
-    double Kmu;
-    double CSFZ;
-    double mu0;
-    double gamma;
+    private double Fx, Fy, Mz, alpha, kappa, R,
+                   Iy, Tw, Tp, Fzt, C1, C2, C3, C4, G1, G2, A0,
+                   A1, A2, A3, A4, Ka, K1, Kmu, CSFZ, mu0, gamma;
 
     public Tyre(String tyreProperties) {
         Fx = 0;
@@ -134,4 +114,27 @@ public class Tyre {
         return res;
     }
 
+    public double getAlpha() {
+        return alpha;
+    }
+
+    public double getFx() {
+        return Fx;
+    }
+
+    public double getFy() {
+        return Fy;
+    }
+
+    public double getKappa() {
+        return kappa;
+    }
+
+    public double getIy() {
+        return Iy;
+    }
+
+    public double getR(){
+        return R;
+    }
 }

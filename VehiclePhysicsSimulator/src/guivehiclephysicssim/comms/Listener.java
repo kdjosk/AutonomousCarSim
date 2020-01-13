@@ -6,7 +6,7 @@ import javax.jms.ObjectMessage;
 
 public class Listener implements MessageListener {
 
-    ObjectMessage message;
+    private ObjectMessage message;
 
     public Listener(){
         ObjectMessage message = null;
@@ -15,7 +15,6 @@ public class Listener implements MessageListener {
     @Override
     public void onMessage(Message msg) {
         message = (ObjectMessage) msg;
-        System.out.println("Controls message is received");
     }
 
     public ObjectMessage getMessage(){

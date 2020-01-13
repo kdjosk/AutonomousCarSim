@@ -15,84 +15,77 @@ import javax.jms.ObjectMessage;
 
 public class Controller {
 
-    Car car;
-    Publisher mapStatePub;
-    Subscriber controlsSub;
+    private Car car;
+    private Publisher mapStatePub;
+    private Subscriber controlsSub;
     // Vehicle state in map reference frame
-    Controls controls;
-    MapState mapState;
-    Path pathPoints;
-    Vector2D[] predictedPathPoints;
+    private Controls controls;
+    private MapState mapState;
+    private Path pathPoints;
+    private Vector2D[] predictedPathPoints;
+    private final float pxPerMeter;
 
-    final float pxPerMeter;
-
-    {
-        // Comes from irl car length and image dimensions
-        // Probably shouldn't be hardcoded
-        pxPerMeter = 57.23f;
-    }
 
     public Controller(double dt) {
-        car = new Car("res/car.properties", "res/tyre.properties",
-                "res/tyre.properties", dt);
-        mapStatePub = new Publisher();
-        controlsSub = new Subscriber();
-        mapState = new MapState(0, 0,  Simulation.initialMapX,
-                Simulation.initialMapY, pxPerMeter);
-        pathPoints = new Path("res/path.csv");
+        pxPerMeter = 57.23f;
+        setCar(new Car("res/car.properties", "res/tyre.properties",
+                "res/tyre.properties", dt));
+        setMapStatePub(new Publisher());
+        setControlsSub(new Subscriber());
+        setMapState(new MapState(0, 0,  Simulation.initialMapX,
+                Simulation.initialMapY, pxPerMeter));
+        setPathPoints(new Path("res/path.csv"));
 
     }
 
     public void update(){
 
-        mapStatePub.publishMessage(mapState);
-        ObjectMessage msg = controlsSub.getMessage();
+        getMapStatePub().publishMessage(getMapState());
+        ObjectMessage msg = getControlsSub().getMessage();
         if(msg != null){
             try {
-                controls = (Controls) msg.getObject();
-                predictedPathPoints = controls.getPredictedPath();
+                setControls((Controls) msg.getObject());
+                setPredictedPathPoints(getControls().getPredictedPath());
             } catch (JMSException e) {
                 e.printStackTrace();
             }
         }
 
-        car.updateModel(controls);
-        mapState.setX(Simulation.initialMapX + car.getFixedX()*pxPerMeter);
-        mapState.setY(Simulation.initialMapY - car.getFixedY()*pxPerMeter);
-        mapState.setPsi(car.getYawAngle());
-        mapState.setV(car.getVelocity());
-
-        //mapState.printInfo();
+        getCar().updateModel(getControls());
+        getMapState().setX(Simulation.initialMapX + getCar().getFixedX()* getPxPerMeter());
+        getMapState().setY(Simulation.initialMapY - getCar().getFixedY()* getPxPerMeter());
+        getMapState().setPsi(getCar().getYawAngle());
+        getMapState().setV(getCar().getVelocity());
 
     }
 
     public float getCarRotation(){
-        return (float)(180.0 * mapState.getPsi()/Math.PI);
+        return (float)(180.0 * getMapState().getPsi()/Math.PI);
     }
 
     public float getMapX(){
-        return (float)(ViewManager.width/2.0 - mapState.getX());
+        return (float)(ViewManager.width/2.0 - getMapState().getX());
     }
 
-    public float getMapY(){ return (float)(ViewManager.height/2.0 - mapState.getY()); }
+    public float getMapY(){ return (float)(ViewManager.height/2.0 - getMapState().getY()); }
 
     public float getCarRotationCenterX(int width) {
-        return (float) (width * car.getCenterOfRotationX());
+        return (float) (width * getCar().getCenterOfRotationX());
     }
 
     public float getCarRotationCenterY(int height) {
-        return (float) (height * car.getCenterOfRotationY());
+        return (float) (height * getCar().getCenterOfRotationY());
     }
 
     public double[] getPathPoint(int i){
-        double[] tmp = pathPoints.getPathPoint(i);
-        tmp[0] = ViewManager.width/2.0 - mapState.getX() + tmp[0];
-        tmp[1] = ViewManager.height/2.0 - mapState.getY() + tmp[1];
+        double[] tmp = getPathPoints().getPathPoint(i);
+        tmp[0] = ViewManager.width/2.0 - getMapState().getX() + tmp[0];
+        tmp[1] = ViewManager.height/2.0 - getMapState().getY() + tmp[1];
         return tmp;
     }
 
     public int getPathPointsSize(){
-        return pathPoints.getPathPointsSize();
+        return getPathPoints().getPathPointsSize();
     }
 
     public Vector2D[] getPredictedPathPoints(){
@@ -100,11 +93,11 @@ public class Controller {
             Vector2D[] res = new Vector2D[predictedPathPoints.length];
             for(int i = 0; i < predictedPathPoints.length; i++){
                 double x = predictedPathPoints[i].getX(), y = predictedPathPoints[i].getY();
-                x = -x * pxPerMeter;
-                y = y * pxPerMeter;
+                x = -x * getPxPerMeter();
+                y = y * getPxPerMeter();
 
-                x = Math.cos(car.getYawAngle()) * x - Math.sin(car.getYawAngle()) * y;
-                y = Math.cos(car.getYawAngle()) * y + Math.sin(car.getYawAngle()) * x;
+                x = Math.cos(getCar().getYawAngle()) * x - Math.sin(getCar().getYawAngle()) * y;
+                y = Math.cos(getCar().getYawAngle()) * y + Math.sin(getCar().getYawAngle()) * x;
 
                 x = x + ViewManager.width/2.0;
                 y = y + ViewManager.height/2.0;
@@ -114,5 +107,61 @@ public class Controller {
             return res;
         }
         else return null;
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+    public Publisher getMapStatePub() {
+        return mapStatePub;
+    }
+
+    public void setMapStatePub(Publisher mapStatePub) {
+        this.mapStatePub = mapStatePub;
+    }
+
+    public Subscriber getControlsSub() {
+        return controlsSub;
+    }
+
+    public void setControlsSub(Subscriber controlsSub) {
+        this.controlsSub = controlsSub;
+    }
+
+    public Controls getControls() {
+        return controls;
+    }
+
+    public void setControls(Controls controls) {
+        this.controls = controls;
+    }
+
+    public MapState getMapState() {
+        return mapState;
+    }
+
+    public void setMapState(MapState mapState) {
+        this.mapState = mapState;
+    }
+
+    public Path getPathPoints() {
+        return pathPoints;
+    }
+
+    public void setPathPoints(Path pathPoints) {
+        this.pathPoints = pathPoints;
+    }
+
+    public void setPredictedPathPoints(Vector2D[] predictedPathPoints) {
+        this.predictedPathPoints = predictedPathPoints;
+    }
+
+    public float getPxPerMeter() {
+        return pxPerMeter;
     }
 }

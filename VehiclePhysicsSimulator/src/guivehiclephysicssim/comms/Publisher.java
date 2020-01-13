@@ -6,13 +6,13 @@ import java.io.Serializable;
 
 public class Publisher {
 
-    InitialContext ctx = null;
-    TopicConnectionFactory tcf = null;
-    TopicConnection tc = null;
-    TopicSession ts = null;
-    Topic t = null;
-    TopicPublisher tpub = null;
-    ObjectMessage objectMessage = null;
+    private InitialContext ctx = null;
+    private TopicConnectionFactory tcf = null;
+    private TopicConnection tc = null;
+    private TopicSession ts = null;
+    private Topic t = null;
+    private TopicPublisher tpub = null;
+    private ObjectMessage objectMessage = null;
 
     public Publisher(){
         try{
@@ -32,11 +32,9 @@ public class Publisher {
 
     public void publishMessage(Serializable msg){
         try{
-            //System.out.println("Attempting to send message");
             objectMessage = ts.createObjectMessage();
             objectMessage.setObject(msg);
             tpub.publish(objectMessage);
-            //System.out.println("Message successfully sent");
         }catch(JMSException e){System.out.println(e.toString());}
 
     }

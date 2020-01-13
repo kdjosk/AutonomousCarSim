@@ -10,55 +10,55 @@ import java.util.Properties;
 public class Car {
 
     // COG to axle lengths
-    final double LF;
-    final double LR;
+    private double LF;
+    private double LR;
     // Height of the Center of Gravity
-    final double HCG;
+    private double HCG;
     // Mass
-    final double M;
+    private double M;
     // Gravity
-    final double G;
+    private double G;
     // Yaw inertia
-    final double IZ;
+    private double IZ;
     // Center of rotation normalized distance from the front axis
-    final double COR;
+    private double COR;
     // Portion of torque applied on front axis
-    double GAMMA;
+    private double GAMMA;
 
     // Tyres
-    public Tyre frontTyre;
-    public Tyre rearTyre;
+    private Tyre frontTyre;
+    private Tyre rearTyre;
 
     // Instantaneous longitudinal acceleration
-    double ax;
-    double ay;
+    private double ax;
+    private double ay;
 
     // Velocity
-    double vx;
-    double vy;
+    private double vx;
+    private double vy;
 
     // Yaw variables
-    public double yawAngle;
-    double yawRate;
+    private double yawAngle;
+    private double yawRate;
 
     // Steering angle
-    public double delta;
+    private double delta;
 
     // Simulation time
-    double t;
-    double dt;
+    private double t;
+    private double dt;
 
     // Tyre angular velocities
-    double omegaf;
-    double omegar;
+    private double omegaf;
+    private double omegar;
 
     // Coordinates to fixed reference frame
-    public double fixedX;
-    public double fixedY;
+    private double fixedX;
+    private double fixedY;
 
     //Front and rear torque
-    double frontTorque;
-    double rearTorque;
+    private double frontTorque;
+    private double rearTorque;
 
     public Car(String bodyProperties, String frontTyreProperties, String rearTyreProperties, double dt) {
         Properties p = new Properties();
@@ -141,15 +141,12 @@ public class Car {
             delta = controls.getDelta();
         }
 
-        //System.out.println("ft,rt: " + frontTorque + ", " + rearTorque);
-        //System.out.println("X, Y: " + fixedX + ", " + fixedY);
-
         this.updateTyreForces();
 
-        double Fxf = frontTyre.Fx;
-        double Fyf = frontTyre.Fy;
-        double Fxr = rearTyre.Fx;
-        double Fyr = rearTyre.Fy;
+        double Fxf = frontTyre.getFx();
+        double Fyf = frontTyre.getFy();
+        double Fxr = rearTyre.getFx();
+        double Fyr = rearTyre.getFy();
 
         /*
         Differential equations:
@@ -162,7 +159,6 @@ public class Car {
         6 - omegaf
         7 - omegar
         */
-        //System.out.println("ft: " + frontTorque + " rt: " + rearTorque);
 
         Differential[] f = new Differential[8];
 
@@ -172,8 +168,8 @@ public class Car {
         f[3] = (double[] y) -> (1.0/M) * (-Fyf*Math.cos(delta) + Fxf*Math.sin(delta) - Fyr) - y[2]*y[1];
         f[4] = (double[] y) -> -y[3]*Math.sin(y[0]) - y[2]*Math.cos(y[0]);
         f[5] = (double[] y) -> -y[3]*Math.cos(y[0]) + y[2]*Math.sin(y[0]);
-        f[6] = (double[] y) -> (1.0/frontTyre.Iy) * (Fxf*frontTyre.R + frontTorque);
-        f[7] = (double[] y) -> (1.0/rearTyre.Iy) * (Fxr*rearTyre.R + rearTorque);
+        f[6] = (double[] y) -> (1.0/frontTyre.getIy()) * (Fxf*frontTyre.getR() + frontTorque);
+        f[7] = (double[] y) -> (1.0/rearTyre.getIy()) * (Fxr*rearTyre.getR() + rearTorque);
 
         double[] y = {yawAngle, yawRate, vx, vy, fixedX, fixedY, omegaf, omegar};
         y = rungeKutta4(y, dt, f);
@@ -191,8 +187,6 @@ public class Car {
         double Fzf = M*(G*LR - ax*HCG)/(LF + LR);
         double Fzr = M*(G*LF + ax*HCG)/(LF + LR);
 
-
-
         // Wheel centre lateral velocities
         double frontVy = vy - LF * yawRate;
         double rearVy = vy + LR * yawRate;
@@ -207,7 +201,6 @@ public class Car {
         else{
             alphaf = Math.atan(frontVy/Math.abs(vx)) - delta;
             alphar = Math.atan(rearVy/Math.abs(vx));
-            //System.out.println("frontVy: " + frontVy + " rearVy: " + rearVy);
             if(Math.abs(alphaf) > Math.PI/2) alphaf = Math.PI/2.0*Math.signum(alphaf);
             if(Math.abs(alphar) > Math.PI/2) alphar = Math.PI/2.0*Math.signum(alphar);
         }
@@ -223,16 +216,15 @@ public class Car {
         double kappaf = 0, kappar = 0;
 
         if(vwxf != 0 || omegaf != 0) {
-            kappaf = vwxf > omegaf*frontTyre.R ? (vwxf - omegaf*frontTyre.R)/vwxf : (vwxf - omegaf * frontTyre.R) / omegaf*frontTyre.R;
+            kappaf = vwxf > omegaf*frontTyre.getR() ? (vwxf - omegaf*frontTyre.getR())/vwxf : (vwxf - omegaf * frontTyre.getR()) / omegaf * frontTyre.getR();
             if(Math.abs(kappaf) >= 1) kappaf = (1 - 1e-5) * Math.signum(kappaf) ;
         }
         if(vwxr != 0 || omegar != 0) {
-            kappar = vwxr > omegar * rearTyre.R ? (vwxr - omegar * rearTyre.R) / vwxr : (vwxr - omegar * rearTyre.R) / omegar * rearTyre.R;
+            kappar = vwxr > omegar * rearTyre.getR() ? (vwxr - omegar * rearTyre.getR()) / vwxr : (vwxr - omegar * rearTyre.getR()) / omegar * rearTyre.getR();
             if(Math.abs(kappar) >= 1) kappar = (1 - 1e-5) * Math.signum(kappar) ;
         }
-        //System.out.println("front tyre");
+
         frontTyre.updateForces(Fzf, kappaf, alphaf);
-        //System.out.println("rear tyre");
         rearTyre.updateForces(Fzr, kappar, alphar);
     }
 

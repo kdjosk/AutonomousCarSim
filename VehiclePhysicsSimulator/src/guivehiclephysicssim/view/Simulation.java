@@ -13,15 +13,13 @@ import org.newdawn.slick.state.StateBasedGame;
 
 public class Simulation extends BasicGameState {
 
-    Image carImage, mapImage;
+    private Image carImage, mapImage;
     // Depends on where you want the car to start on the map
     public final static float initialMapX = 2838, initialMapY = 3542;
-    Controller controller;
+    private Controller controller;
 
 
-    public Simulation(int state){
-
-    }
+    public Simulation(int state){ }
 
     @Override
     public int getID() {
@@ -35,7 +33,7 @@ public class Simulation extends BasicGameState {
             carImage = new Image("res/carImage.png");
             mapImage = new Image("res/trackImage.png");
             carImage.setCenterOfRotation(controller.getCarRotationCenterX(carImage.getWidth()),
-                    controller.getCarRotationCenterY(carImage.getHeight()));
+                                         controller.getCarRotationCenterY(carImage.getHeight()));
         }catch(Exception e){e.printStackTrace();}
 
 

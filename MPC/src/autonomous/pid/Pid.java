@@ -44,6 +44,8 @@ public class Pid {
         maxVelocity = Double.parseDouble(p.getProperty("maxVelocity"));
         refVelocity = Double.parseDouble(p.getProperty("refVelocity"));
         pathPoints = Integer.parseInt(p.getProperty("pathPoints"));
+        lastVelocityError = 0;
+        lastPathOffsetError = 0;
     }
 
     public Controls getControls(double velocity, double[] pathCoeffs){

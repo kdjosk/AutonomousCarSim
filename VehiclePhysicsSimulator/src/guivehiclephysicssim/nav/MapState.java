@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class MapState implements Serializable {
     // coordinates in map reference frame
-    double v;
-    double psi;
-    double x;
-    double y;
-    double pxPerMeter;
+    private double v;
+    private double psi;
+    private double x;
+    private double y;
+    private double pxPerMeter;
 
     public MapState(double v, double psi, double x, double y, double pxPerMeter){
         this.v = v;

@@ -5,13 +5,13 @@ import javax.naming.InitialContext;
 
 public class Subscriber {
 
-    InitialContext ctx = null;
-    TopicConnectionFactory tcf = null;
-    TopicConnection tc = null;
-    TopicSession ts = null;
-    TopicSubscriber tsub = null;
-    Topic t = null;
-    Listener listener = null;
+    private InitialContext ctx = null;
+    private TopicConnectionFactory tcf = null;
+    private TopicConnection tc = null;
+    private TopicSession ts = null;
+    private TopicSubscriber tsub = null;
+    private Topic t = null;
+    private Listener listener = null;
 
     public Subscriber(){
         try {
@@ -29,8 +29,6 @@ public class Subscriber {
             listener = new Listener();
 
             tsub.setMessageListener(listener);
-
-            //System.out.println("Subscriber is ready, waiting for messages...");
 
         } catch (Exception e){System.out.println(e.toString());}
     }

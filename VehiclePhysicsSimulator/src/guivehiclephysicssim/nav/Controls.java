@@ -5,11 +5,11 @@ import org.apache.commons.math3.geometry.euclidean.twod.Vector2D;
 import java.io.Serializable;
 
 public class Controls implements Serializable {
-    double delta;
-    double velocity;
-    double acceleration;
-    Vector2D[] predictedPath;
-    Vector2D[] polynomialFit;
+    private double delta;
+    private double velocity;
+    private double acceleration;
+    private Vector2D[] predictedPath;
+    private Vector2D[] polynomialFit;
 
     public Controls(double delta, double velocity, double acceleration, Vector2D[] predictedPath, Vector2D[] polynomialFit) {
         this.delta = delta;

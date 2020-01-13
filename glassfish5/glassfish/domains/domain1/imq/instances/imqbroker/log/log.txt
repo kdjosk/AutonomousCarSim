@@ -16262,3 +16262,511 @@ Java Runtime: 1.8.0_232 Private Build /usr/lib/jvm/java-8-openjdk-amd64/jre
 |#]
 
 
+[#|2020-01-12T19:57:32.140+0100|SEVERE|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|ERROR [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory):
+java.io.IOException: [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.loadUserTable(JMQFileUserRepository.java:273)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.findMatch(JMQFileUserRepository.java:124)
+	at com.sun.messaging.jmq.jmsserver.auth.JMQDigestAuthenticationHandler.handleResponse(JMQDigestAuthenticationHandler.java:135)
+	at com.sun.messaging.jmq.jmsserver.auth.AccessController.handleResponse(AccessController.java:438)
+	at com.sun.messaging.jmq.jmsserver.common.handlers.AuthHandler.handle(AuthHandler.java:125)
+	at com.sun.messaging.jmq.jmsserver.data.PacketRouter.handleMessage(PacketRouter.java:199)
+	at com.sun.messaging.jmq.jmsserver.service.imq.IMQIPConnection.readData(IMQIPConnection.java:1325)
+	at com.sun.messaging.jmq.jmsserver.service.imq.IMQIPConnection.process(IMQIPConnection.java:556)
+	at com.sun.messaging.jmq.jmsserver.service.imq.OperationRunnable.process(OperationRunnable.java:175)
+	at com.sun.messaging.jmq.jmsserver.pool.BasicRunnable.run(BasicRunnable.java:499)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.loadUserTable(JMQFileUserRepository.java:231)
+	... 10 more
+|#]
+
+
+[#|2020-01-12T19:57:32.163+0100|SEVERE|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|ERROR [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory):
+javax.security.auth.login.LoginException: [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+|#]
+
+
+[#|2020-01-12T19:57:32.205+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|[B1066]:   Closing: ???@127.0.0.1:0->jms:0 because "java.io.IOException: Stream closed". Count: service=0 broker=0
+|#]
+
+
+[#|2020-01-12T19:57:32.262+0100|SEVERE|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|ERROR [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory):
+java.io.IOException: [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.loadUserTable(JMQFileUserRepository.java:273)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.findMatch(JMQFileUserRepository.java:124)
+	at com.sun.messaging.jmq.jmsserver.auth.JMQDigestAuthenticationHandler.handleResponse(JMQDigestAuthenticationHandler.java:135)
+	at com.sun.messaging.jmq.jmsserver.auth.AccessController.handleResponse(AccessController.java:438)
+	at com.sun.messaging.jmq.jmsserver.common.handlers.AuthHandler.handle(AuthHandler.java:125)
+	at com.sun.messaging.jmq.jmsserver.data.PacketRouter.handleMessage(PacketRouter.java:199)
+	at com.sun.messaging.jmq.jmsserver.service.imq.IMQIPConnection.readData(IMQIPConnection.java:1325)
+	at com.sun.messaging.jmq.jmsserver.service.imq.IMQIPConnection.process(IMQIPConnection.java:556)
+	at com.sun.messaging.jmq.jmsserver.service.imq.OperationRunnable.process(OperationRunnable.java:175)
+	at com.sun.messaging.jmq.jmsserver.pool.BasicRunnable.run(BasicRunnable.java:499)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.loadUserTable(JMQFileUserRepository.java:231)
+	... 10 more
+|#]
+
+
+[#|2020-01-12T19:57:32.262+0100|SEVERE|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|ERROR [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory):
+javax.security.auth.login.LoginException: [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+|#]
+
+
+[#|2020-01-12T19:57:32.264+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|[B1066]:   Closing: ???@127.0.0.1:0->jms:0 because "java.io.IOException: Stream closed". Count: service=0 broker=0
+|#]
+
+
+[#|2020-01-12T19:57:36.380+0100|SEVERE|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|ERROR [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory):
+java.io.IOException: [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.loadUserTable(JMQFileUserRepository.java:273)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.findMatch(JMQFileUserRepository.java:124)
+	at com.sun.messaging.jmq.jmsserver.auth.JMQDigestAuthenticationHandler.handleResponse(JMQDigestAuthenticationHandler.java:135)
+	at com.sun.messaging.jmq.jmsserver.auth.AccessController.handleResponse(AccessController.java:438)
+	at com.sun.messaging.jmq.jmsserver.common.handlers.AuthHandler.handle(AuthHandler.java:125)
+	at com.sun.messaging.jmq.jmsserver.data.PacketRouter.handleMessage(PacketRouter.java:199)
+	at com.sun.messaging.jmq.jmsserver.service.imq.IMQIPConnection.readData(IMQIPConnection.java:1325)
+	at com.sun.messaging.jmq.jmsserver.service.imq.IMQIPConnection.process(IMQIPConnection.java:556)
+	at com.sun.messaging.jmq.jmsserver.service.imq.OperationRunnable.process(OperationRunnable.java:175)
+	at com.sun.messaging.jmq.jmsserver.pool.BasicRunnable.run(BasicRunnable.java:499)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.loadUserTable(JMQFileUserRepository.java:231)
+	... 10 more
+|#]
+
+
+[#|2020-01-12T19:57:36.396+0100|SEVERE|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|ERROR [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory):
+javax.security.auth.login.LoginException: [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+|#]
+
+
+[#|2020-01-12T19:57:36.444+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|[B1066]:   Closing: ???@127.0.0.1:0->jms:0 because "java.io.IOException: Stream closed". Count: service=0 broker=0
+|#]
+
+
+[#|2020-01-12T19:57:43.047+0100|SEVERE|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|ERROR [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory):
+java.io.IOException: [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.loadUserTable(JMQFileUserRepository.java:273)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.findMatch(JMQFileUserRepository.java:124)
+	at com.sun.messaging.jmq.jmsserver.auth.JMQDigestAuthenticationHandler.handleResponse(JMQDigestAuthenticationHandler.java:135)
+	at com.sun.messaging.jmq.jmsserver.auth.AccessController.handleResponse(AccessController.java:438)
+	at com.sun.messaging.jmq.jmsserver.common.handlers.AuthHandler.handle(AuthHandler.java:125)
+	at com.sun.messaging.jmq.jmsserver.data.PacketRouter.handleMessage(PacketRouter.java:199)
+	at com.sun.messaging.jmq.jmsserver.service.imq.IMQIPConnection.readData(IMQIPConnection.java:1325)
+	at com.sun.messaging.jmq.jmsserver.service.imq.IMQIPConnection.process(IMQIPConnection.java:556)
+	at com.sun.messaging.jmq.jmsserver.service.imq.OperationRunnable.process(OperationRunnable.java:175)
+	at com.sun.messaging.jmq.jmsserver.pool.BasicRunnable.run(BasicRunnable.java:499)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at com.sun.messaging.jmq.jmsserver.auth.file.JMQFileUserRepository.loadUserTable(JMQFileUserRepository.java:231)
+	... 10 more
+|#]
+
+
+[#|2020-01-12T19:57:43.047+0100|SEVERE|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|ERROR [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory):
+javax.security.auth.login.LoginException: [B3052]: Failed to read password file: /home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd
+/home/krzysiu/java/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/etc/passwd (No such file or directory)
+|#]
+
+
+[#|2020-01-12T19:57:43.049+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[9];|[B1066]:   Closing: ???@127.0.0.1:0->jms:0 because "java.io.IOException: Stream closed". Count: service=0 broker=0
+|#]
+
+
+[#|2020-01-12T20:07:14.399+0100|WARNING|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[S2004]: Log output channel com.sun.messaging.jmq.util.log.SysLogHandler is disabled: no imqutil in java.library.path|#]
+
+
+[#|2020-01-12T20:07:14.428+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|
+================================================================================
+Message Queue 5.1.1
+Oracle
+Version:  5.1.1  (Build 6-a)
+Compile:  August 17 2017 1649
+
+Copyright (c) 2013, Oracle and/or its affiliates.  All rights reserved.
+================================================================================
+Java Runtime: 1.8.0_232 Private Build /usr/lib/jvm/java-8-openjdk-amd64/jre
+|#]
+
+
+[#|2020-01-12T20:07:14.443+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|   IMQ_HOME=/home/krzysiu/IdeaProjects/glassfish5/mq
+|#]
+
+
+[#|2020-01-12T20:07:14.443+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|IMQ_VARHOME=/home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq
+|#]
+
+
+[#|2020-01-12T20:07:14.443+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|Linux 5.0.0-37-generic amd64 battlestation (8 cpu) krzysiu
+|#]
+
+
+[#|2020-01-12T20:07:14.444+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|Java Heap Size: max=466432k, current=308736k
+|#]
+
+
+[#|2020-01-12T20:07:14.444+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|Arguments: -port 7676 -name imqbroker -nobind -imqhome /home/krzysiu/IdeaProjects/glassfish5/mq -varhome /home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq -libhome /home/krzysiu/IdeaProjects/glassfish5/mq/lib -useRmiRegistry -rmiRegistryPort 8686 -save -silent
+|#]
+
+
+[#|2020-01-12T20:07:14.444+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|JMSRA BrokerProps: imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.service.activate=jmsdirect, imq.imqcmd.password=*****, imq.jmsra.managed=true, imq.cluster.nowaitForMasterBroker=true
+|#]
+
+
+[#|2020-01-12T20:07:14.444+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|Broker Properties: imq.service.activate=jmsdirect, imq.cluster.nowaitForMasterBroker=true, imq.jmx.rmiregistry.use=true, imq.portmapper.port=7676, imq.jmsra.managed=true, imq.instancename=imqbroker, java.util.logging.ConsoleHandler.level=OFF, imq.imqcmd.password=*****, imq.jmx.rmiregistry.port=8686, imq.service.runtimeAdd=mqdirect2, imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.jmx.rmiregistry.start=false, imq.portmapper.bind=false
+|#]
+
+
+[#|2020-01-12T20:07:14.444+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|Embedded Broker 
+|#]
+
+
+[#|2020-01-12T20:07:14.464+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1522]: Create thread pool portmapper for (8, 8)(60s) service
+|#]
+
+
+[#|2020-01-12T20:07:14.482+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|imq.persist.minimizeWrites=true
+|#]
+
+
+[#|2020-01-12T20:07:14.483+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|imq.persist.file.minimizeWrites=false
+|#]
+
+
+[#|2020-01-12T20:07:14.491+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1060]: Loading persistent data...
+|#]
+
+
+[#|2020-01-12T20:07:14.491+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|Using built-in file-based persistent store: /home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/
+|#]
+
+
+[#|2020-01-12T20:07:14.658+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B2219]: Broker property setting imq.persist.minimizeWritesLevel2=true will be ignored
+|#]
+
+
+[#|2020-01-12T20:07:14.678+0100|WARNING|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|WARNING [B3168]: Invalid broker address for this broker to run in cluster: Loopback IP address is not allowed in broker address mq://127.0.1.1:7676/?instName=imqbroker&brokerSessionUID=2261774150038234112&ha=false for cluster
+|#]
+
+
+[#|2020-01-12T20:07:14.678+0100|WARNING|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|WARNING [B1137]: Cluster initialization failed. Disabling the cluster service.
+|#]
+
+
+[#|2020-01-12T20:07:14.681+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1013]: Auto Creation of Queues is enabled
+|#]
+
+
+[#|2020-01-12T20:07:14.709+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|new transaction log enabled
+|#]
+
+
+[#|2020-01-12T20:07:14.709+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|sync writes to disk = false
+|#]
+
+
+[#|2020-01-12T20:07:14.709+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|logNonTransactedMsgSend = false
+|#]
+
+
+[#|2020-01-12T20:07:14.710+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|logNonTransactedMsgAck = false
+|#]
+
+
+[#|2020-01-12T20:07:14.710+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1392]: Opening transaction log with file mode rw, maximum size 10,485,760 bytes
+|#]
+
+
+[#|2020-01-12T20:07:14.718+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1270]: Processing messages from transaction log file...
+|#]
+
+
+[#|2020-01-12T20:07:14.719+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1434]: Retrieving stored destinations
+|#]
+
+
+[#|2020-01-12T20:07:14.720+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1503]: Retrieved 3 destinations from store
+|#]
+
+
+[#|2020-01-12T20:07:14.721+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-01-12T20:07:14.721+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1151]: Loading destination ctrltpc [Topic] with 0 messages
+|#]
+
+
+[#|2020-01-12T20:07:14.722+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1152]: Loading of destination ctrltpc [Topic] complete
+|#]
+
+
+[#|2020-01-12T20:07:14.722+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-01-12T20:07:14.722+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-01-12T20:07:14.722+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1517]: Destroying destination stttpc [Topic] 
+|#]
+
+
+[#|2020-01-12T20:07:14.722+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1151]: Loading destination stttpc [Topic] with 0 messages
+|#]
+
+
+[#|2020-01-12T20:07:14.722+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1152]: Loading of destination stttpc [Topic] complete
+|#]
+
+
+[#|2020-01-12T20:07:14.722+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1387]: Purged 0 messages from destination stttpc [Topic]
+|#]
+
+
+[#|2020-01-12T20:07:14.722+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1159]: Destination stttpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-01-12T20:07:14.723+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1151]: Loading destination mq.sys.dmq [Queue] with 0 messages
+|#]
+
+
+[#|2020-01-12T20:07:14.723+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1152]: Loading of destination mq.sys.dmq [Queue] complete
+|#]
+
+
+[#|2020-01-12T20:07:14.729+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1136]: Processing stored transactions
+|#]
+
+
+[#|2020-01-12T20:07:14.729+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1390]: Loading of transactions has been successfully completed
+|#]
+
+
+[#|2020-01-12T20:07:14.742+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1239]: Using platform MBean server
+|#]
+
+
+[#|2020-01-12T20:07:14.756+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1234]: JMX Connector Server jmxrmi started successfully with url service:jmx:rmi://battlestation/jndi/rmi://battlestation:8686/battlestation/7676/jmxrmi
+|#]
+
+
+[#|2020-01-12T20:07:14.815+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1004]: Starting the admin service using tcp(host = *, port=0, mode=dedicated) with min threads 4 and max threads of 10 
+|#]
+
+
+[#|2020-01-12T20:07:14.816+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1227]: Using file user repository for admin service connection authentication
+|#]
+
+
+[#|2020-01-12T20:07:14.823+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1004]: Starting the jms service using tcp(host = *, port=0, mode=dedicated) with min threads 10 and max threads of 1000 
+|#]
+
+
+[#|2020-01-12T20:07:14.823+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1227]: Using file user repository for jms service connection authentication
+|#]
+
+
+[#|2020-01-12T20:07:14.825+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1004]: Starting the mqdirect2 service using in-process connections with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2020-01-12T20:07:14.825+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1227]: Using file user repository for mqdirect2 service connection authentication
+|#]
+
+
+[#|2020-01-12T20:07:14.827+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1004]: Starting the jmsdirect service using  with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2020-01-12T20:07:14.827+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1227]: Using file user repository for jmsdirect service connection authentication
+|#]
+
+
+[#|2020-01-12T20:07:14.833+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=82;_ThreadName=p: thread-pool-1; w: 2;|[B1039]: Broker "imqbroker@battlestation:7676" ready.
+|#]
+
+
+[#|2020-01-12T20:07:15.944+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:53156->jms:34505. Count: service=1 broker=1
+|#]
+
+
+[#|2020-01-12T20:07:16.025+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:53160->jms:34505. Count: service=2 broker=2
+|#]
+
+
+[#|2020-01-12T20:07:16.046+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:53164->jms:34505. Count: service=3 broker=3
+|#]
+
+
+[#|2020-01-12T20:07:16.060+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=101;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:53168->jms:34505. Count: service=4 broker=4
+|#]
+
+
+[#|2020-01-12T20:07:16.088+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=103;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:53172->jms:34505. Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-12T20:07:16.103+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=105;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:53176->jms:34505. Count: service=6 broker=6
+|#]
+
+
+[#|2020-01-12T20:07:16.120+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=107;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:53180->jms:34505. Count: service=7 broker=7
+|#]
+
+
+[#|2020-01-12T20:07:16.140+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:53184->jms:34505. Count: service=8 broker=8
+|#]
+
+
+[#|2020-01-12T20:07:16.243+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[0];|[B1132]: Auto-creating destination stttpc [Topic] 
+|#]
+
+
+[#|2020-01-12T20:07:16.300+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[2];|[B1132]: Auto-creating destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-01-12T20:07:39.862+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:53156->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-12T20:07:39.862+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:53164->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-01-12T20:07:39.862+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:53160->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-01-12T20:07:39.863+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=103;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:53172->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-01-12T20:07:39.863+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=107;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:53180->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-01-12T20:07:39.863+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=101;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:53168->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-01-12T20:07:39.862+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=105;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:53176->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-01-12T20:07:39.863+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:53184->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-01-12T20:07:52.765+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=101;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:53200->jms:34505. Count: service=1 broker=1
+|#]
+
+
+[#|2020-01-12T20:07:52.792+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:53204->jms:34505. Count: service=2 broker=2
+|#]
+
+
+[#|2020-01-12T20:07:52.805+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=104;_ThreadName=Thread-jms[9];|[B1065]: Accepting: guest@127.0.0.1:53208->jms:34505. Count: service=3 broker=3
+|#]
+
+
+[#|2020-01-12T20:07:52.818+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:53212->jms:34505. Count: service=4 broker=4
+|#]
+
+
+[#|2020-01-12T20:07:52.834+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:53216->jms:34505. Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-12T20:07:52.847+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=110;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:53220->jms:34505. Count: service=6 broker=6
+|#]
+
+
+[#|2020-01-12T20:07:52.858+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=108;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:53224->jms:34505. Count: service=7 broker=7
+|#]
+
+
+[#|2020-01-12T20:07:52.874+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=105;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:53228->jms:34505. Count: service=8 broker=8
+|#]
+
+
+[#|2020-01-12T20:09:10.411+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=105;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:53228->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-01-12T20:09:10.411+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:53216->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-01-12T20:09:10.413+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=108;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:53224->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-12T20:09:10.413+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:53212->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-01-12T20:09:10.413+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=101;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:53200->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-01-12T20:09:10.414+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:53204->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-01-12T20:09:10.414+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=104;_ThreadName=Thread-jms[9];|[B1066]:   Closing: guest@127.0.0.1:53208->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-01-12T20:09:10.418+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=110;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:53220->jms:34505 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-01-12T20:11:10.410+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination ctrltpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-01-12T20:11:10.411+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-01-12T20:11:10.411+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-01-12T20:11:10.412+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=MQTimer-Thread;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+

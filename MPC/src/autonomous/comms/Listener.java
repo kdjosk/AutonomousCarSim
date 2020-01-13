@@ -6,7 +6,7 @@ import javax.jms.ObjectMessage;
 
 public class Listener implements MessageListener {
 
-    ObjectMessage message;
+    private ObjectMessage message;
 
     public Listener(){
         message = null;
