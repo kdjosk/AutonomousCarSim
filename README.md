@@ -5,11 +5,11 @@ four wheeled vehicle. It uses a real time dynamic simulation of a "bicycle model
 
 PID control demonstration
 
-![Image](https://j.gifs.com/jZK3QP.gif)
+![PID Control](demo/PID.gif)
 
 MPC control demonstration
 
-![Image](https://j.gifs.com/vlv38r.gif)
+![MPC Control](demo/MPC.gif)
 
 Pink dots represent the path points predicted by the optimizer. It doesn't work that well, because the COBYLA optimizer isn't really suited for
 this kind of application. This kind of performance was only made possible by a simplifying the MPC itself, e.g. embedding kinematic constraints in the cost function. Interfacing with IPOPT could probably solve this issue.
