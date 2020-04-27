@@ -1,7 +1,7 @@
 # Autonomous Car Simulator
 
 This project is supposed to provide a control system testing environment for a
-four wheeled vehicle. It uses a real time dynamic simulation of a "bicycle model", as well as a realistic tire model
+four wheeled vehicle. It uses a real time dynamic simulation of a "bicycle" model, as well as a realistic tire model. The simulation and the controller are two separate threads, communicating through a server in a Publisher-Subscriber scheme, which is meant to emulate a ROS system. 
 
 PID control demonstration
 
