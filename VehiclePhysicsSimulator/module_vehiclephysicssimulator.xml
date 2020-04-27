@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_vehiclephysicssimulator" default="compile.module.vehiclephysicssimulator">
+  <dirname property="module.vehiclephysicssimulator.basedir" file="${ant.file.module_vehiclephysicssimulator}"/>
+  
+  <property name="module.jdk.home.vehiclephysicssimulator" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.vehiclephysicssimulator" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.vehiclephysicssimulator" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.vehiclephysicssimulator" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="vehiclephysicssimulator.output.dir" value="${module.vehiclephysicssimulator.basedir}/out/production/VehiclePhysicsSimulator"/>
+  <property name="vehiclephysicssimulator.testoutput.dir" value="${module.vehiclephysicssimulator.basedir}/out/test/VehiclePhysicsSimulator"/>
+  
+  <path id="vehiclephysicssimulator.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="vehiclephysicssimulator.module.production.classpath">
+    <path refid="${module.jdk.classpath.vehiclephysicssimulator}"/>
+    <path refid="library.javax.jms:javax.jms-api:2.0-b13.classpath"/>
+    <path refid="library.math3.classpath"/>
+    <pathelement location="${cobyla2.output.dir}"/>
+    <path refid="library.lwjgl.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="vehiclephysicssimulator.runtime.production.module.classpath">
+    <pathelement location="${vehiclephysicssimulator.output.dir}"/>
+    <path refid="library.javax.jms:javax.jms-api:2.0-b13.classpath"/>
+    <path refid="library.math3.classpath"/>
+    <path refid="cobyla2.runtime.production.module.classpath"/>
+    <path refid="library.lwjgl.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="vehiclephysicssimulator.module.classpath">
+    <path refid="${module.jdk.classpath.vehiclephysicssimulator}"/>
+    <pathelement location="${vehiclephysicssimulator.output.dir}"/>
+    <path refid="library.javax.jms:javax.jms-api:2.0-b13.classpath"/>
+    <path refid="library.math3.classpath"/>
+    <pathelement location="${cobyla2.testoutput.dir}"/>
+    <pathelement location="${cobyla2.output.dir}"/>
+    <path refid="library.lwjgl.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="vehiclephysicssimulator.runtime.module.classpath">
+    <pathelement location="${vehiclephysicssimulator.testoutput.dir}"/>
+    <pathelement location="${vehiclephysicssimulator.output.dir}"/>
+    <path refid="library.javax.jms:javax.jms-api:2.0-b13.classpath"/>
+    <path refid="library.math3.classpath"/>
+    <path refid="cobyla2.runtime.module.classpath"/>
+    <path refid="library.lwjgl.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.mpc">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  <patternset id="excluded.from.module.vehiclephysicssimulator">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.vehiclephysicssimulator">
+    <patternset refid="excluded.from.module.mpc"/>
+    <patternset refid="excluded.from.module.vehiclephysicssimulator"/>
+  </patternset>
+  
+  <path id="vehiclephysicssimulator.module.sourcepath">
+    <dirset dir="${module.vehiclephysicssimulator.basedir}/../MPC">
+      <include name="src"/>
+    </dirset>
+    <dirset dir="${module.vehiclephysicssimulator.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.vehiclephysicssimulator" depends="compile.module.vehiclephysicssimulator.production,compile.module.vehiclephysicssimulator.tests" description="Compile modules VehiclePhysicsSimulator"/>
+  
+  <target name="compile.module.vehiclephysicssimulator.production" depends="register.custom.compilers,compile.module.cobyla2" description="Compile modules VehiclePhysicsSimulator; production classes">
+    <mkdir dir="${vehiclephysicssimulator.output.dir}"/>
+    <javac2 destdir="${vehiclephysicssimulator.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.vehiclephysicssimulator}/javac">
+      <compilerarg line="${compiler.args.vehiclephysicssimulator}"/>
+      <bootclasspath refid="vehiclephysicssimulator.module.bootclasspath"/>
+      <classpath refid="vehiclephysicssimulator.module.production.classpath"/>
+      <src refid="vehiclephysicssimulator.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.vehiclephysicssimulator"/>
+    </javac2>
+    
+    <copy todir="${vehiclephysicssimulator.output.dir}">
+      <fileset dir="${module.vehiclephysicssimulator.basedir}/../MPC/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.vehiclephysicssimulator.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.vehiclephysicssimulator.tests" depends="register.custom.compilers,compile.module.vehiclephysicssimulator.production" description="compile modules VehiclePhysicsSimulator; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.vehiclephysicssimulator" description="cleanup module">
+    <delete dir="${vehiclephysicssimulator.output.dir}"/>
+    <delete dir="${vehiclephysicssimulator.testoutput.dir}"/>
+  </target>
+</project>

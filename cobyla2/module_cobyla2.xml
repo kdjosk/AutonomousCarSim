@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_cobyla2" default="compile.module.cobyla2">
+  <dirname property="module.cobyla2.basedir" file="${ant.file.module_cobyla2}"/>
+  
+  <property name="module.jdk.home.cobyla2" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.cobyla2" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.cobyla2" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.cobyla2" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="cobyla2.output.dir" value="${module.cobyla2.basedir}/../VehiclePhysicsSimulator/out/production/cobyla2"/>
+  <property name="cobyla2.testoutput.dir" value="${module.cobyla2.basedir}/../VehiclePhysicsSimulator/out/test/cobyla2"/>
+  
+  <path id="cobyla2.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="cobyla2.module.production.classpath">
+    <path refid="${module.jdk.classpath.cobyla2}"/>
+  </path>
+  
+  <path id="cobyla2.runtime.production.module.classpath">
+    <pathelement location="${cobyla2.output.dir}"/>
+  </path>
+  
+  <path id="cobyla2.module.classpath">
+    <path refid="${module.jdk.classpath.cobyla2}"/>
+    <pathelement location="${cobyla2.output.dir}"/>
+  </path>
+  
+  <path id="cobyla2.runtime.module.classpath">
+    <pathelement location="${cobyla2.testoutput.dir}"/>
+    <pathelement location="${cobyla2.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.cobyla2">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.cobyla2">
+    <patternset refid="excluded.from.module.cobyla2"/>
+  </patternset>
+  
+  <path id="cobyla2.module.sourcepath">
+    <dirset dir="${module.cobyla2.basedir}">
+      <include name="jcobyla/src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.cobyla2" depends="compile.module.cobyla2.production,compile.module.cobyla2.tests" description="Compile module cobyla2"/>
+  
+  <target name="compile.module.cobyla2.production" depends="register.custom.compilers" description="Compile module cobyla2; production classes">
+    <mkdir dir="${cobyla2.output.dir}"/>
+    <javac2 destdir="${cobyla2.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.cobyla2}/javac">
+      <compilerarg line="${compiler.args.cobyla2}"/>
+      <bootclasspath refid="cobyla2.module.bootclasspath"/>
+      <classpath refid="cobyla2.module.production.classpath"/>
+      <src refid="cobyla2.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.cobyla2"/>
+    </javac2>
+    
+    <copy todir="${cobyla2.output.dir}">
+      <fileset dir="${module.cobyla2.basedir}/jcobyla/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.cobyla2.tests" depends="register.custom.compilers,compile.module.cobyla2.production" description="compile module cobyla2; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.cobyla2" description="cleanup module">
+    <delete dir="${cobyla2.output.dir}"/>
+    <delete dir="${cobyla2.testoutput.dir}"/>
+  </target>
+</project>

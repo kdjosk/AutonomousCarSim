@@ -9,7 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="javax.jms:javax.jms-api:2.0-b13" level="project" />
     <orderEntry type="library" name="lwjgl" level="project" />
-    <orderEntry type="library" name="org.apache.commons:commons-math3:3.6.1" level="project" />
+    <orderEntry type="library" name="math3" level="project" />
     <orderEntry type="library" exported="" name="lib" level="project" />
     <orderEntry type="module" module-name="MPC" />
   </component>

@@ -16918,3 +16918,2639 @@ Java Runtime: 1.8.0_232 Private Build /usr/lib/jvm/java-8-openjdk-amd64/jre
 |#]
 
 
+[#|2020-01-13T19:53:56.307+0100|WARNING|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[S2004]: Log output channel com.sun.messaging.jmq.util.log.SysLogHandler is disabled: no imqutil in java.library.path|#]
+
+
+[#|2020-01-13T19:53:56.337+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|
+================================================================================
+Message Queue 5.1.1
+Oracle
+Version:  5.1.1  (Build 6-a)
+Compile:  August 17 2017 1649
+
+Copyright (c) 2013, Oracle and/or its affiliates.  All rights reserved.
+================================================================================
+Java Runtime: 1.8.0_232 Private Build /usr/lib/jvm/java-8-openjdk-amd64/jre
+|#]
+
+
+[#|2020-01-13T19:53:56.359+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|   IMQ_HOME=/home/krzysiu/IdeaProjects/glassfish5/mq
+|#]
+
+
+[#|2020-01-13T19:53:56.359+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|IMQ_VARHOME=/home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq
+|#]
+
+
+[#|2020-01-13T19:53:56.359+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|Linux 5.0.0-37-generic amd64 battlestation (8 cpu) krzysiu
+|#]
+
+
+[#|2020-01-13T19:53:56.360+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|Java Heap Size: max=466432k, current=259584k
+|#]
+
+
+[#|2020-01-13T19:53:56.360+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|Arguments: -port 7676 -name imqbroker -nobind -imqhome /home/krzysiu/IdeaProjects/glassfish5/mq -varhome /home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq -libhome /home/krzysiu/IdeaProjects/glassfish5/mq/lib -useRmiRegistry -rmiRegistryPort 8686 -save -silent
+|#]
+
+
+[#|2020-01-13T19:53:56.360+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|JMSRA BrokerProps: imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.service.activate=jmsdirect, imq.imqcmd.password=*****, imq.jmsra.managed=true, imq.cluster.nowaitForMasterBroker=true
+|#]
+
+
+[#|2020-01-13T19:53:56.360+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|Broker Properties: imq.service.activate=jmsdirect, imq.cluster.nowaitForMasterBroker=true, imq.jmx.rmiregistry.use=true, imq.portmapper.port=7676, imq.jmsra.managed=true, imq.instancename=imqbroker, java.util.logging.ConsoleHandler.level=OFF, imq.imqcmd.password=*****, imq.jmx.rmiregistry.port=8686, imq.service.runtimeAdd=mqdirect2, imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.jmx.rmiregistry.start=false, imq.portmapper.bind=false
+|#]
+
+
+[#|2020-01-13T19:53:56.360+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|Embedded Broker 
+|#]
+
+
+[#|2020-01-13T19:53:56.394+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1522]: Create thread pool portmapper for (8, 8)(60s) service
+|#]
+
+
+[#|2020-01-13T19:53:56.419+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|imq.persist.minimizeWrites=true
+|#]
+
+
+[#|2020-01-13T19:53:56.419+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|imq.persist.file.minimizeWrites=false
+|#]
+
+
+[#|2020-01-13T19:53:56.433+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1060]: Loading persistent data...
+|#]
+
+
+[#|2020-01-13T19:53:56.433+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|Using built-in file-based persistent store: /home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/
+|#]
+
+
+[#|2020-01-13T19:53:56.681+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B2219]: Broker property setting imq.persist.minimizeWritesLevel2=true will be ignored
+|#]
+
+
+[#|2020-01-13T19:53:56.701+0100|WARNING|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|WARNING [B3168]: Invalid broker address for this broker to run in cluster: Loopback IP address is not allowed in broker address mq://127.0.1.1:7676/?instName=imqbroker&brokerSessionUID=1818732558609756160&ha=false for cluster
+|#]
+
+
+[#|2020-01-13T19:53:56.701+0100|WARNING|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|WARNING [B1137]: Cluster initialization failed. Disabling the cluster service.
+|#]
+
+
+[#|2020-01-13T19:53:56.704+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1013]: Auto Creation of Queues is enabled
+|#]
+
+
+[#|2020-01-13T19:53:56.727+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|new transaction log enabled
+|#]
+
+
+[#|2020-01-13T19:53:56.727+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|sync writes to disk = false
+|#]
+
+
+[#|2020-01-13T19:53:56.727+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|logNonTransactedMsgSend = false
+|#]
+
+
+[#|2020-01-13T19:53:56.727+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|logNonTransactedMsgAck = false
+|#]
+
+
+[#|2020-01-13T19:53:56.728+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1392]: Opening transaction log with file mode rw, maximum size 10,485,760 bytes
+|#]
+
+
+[#|2020-01-13T19:53:56.742+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1270]: Processing messages from transaction log file...
+|#]
+
+
+[#|2020-01-13T19:53:56.742+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1434]: Retrieving stored destinations
+|#]
+
+
+[#|2020-01-13T19:53:56.743+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1503]: Retrieved 2 destinations from store
+|#]
+
+
+[#|2020-01-13T19:53:56.743+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-01-13T19:53:56.743+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1151]: Loading destination ctrltpc [Topic] with 0 messages
+|#]
+
+
+[#|2020-01-13T19:53:56.744+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1152]: Loading of destination ctrltpc [Topic] complete
+|#]
+
+
+[#|2020-01-13T19:53:56.744+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-01-13T19:53:56.744+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-01-13T19:53:56.744+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1151]: Loading destination mq.sys.dmq [Queue] with 0 messages
+|#]
+
+
+[#|2020-01-13T19:53:56.744+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1152]: Loading of destination mq.sys.dmq [Queue] complete
+|#]
+
+
+[#|2020-01-13T19:53:56.750+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1136]: Processing stored transactions
+|#]
+
+
+[#|2020-01-13T19:53:56.751+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1390]: Loading of transactions has been successfully completed
+|#]
+
+
+[#|2020-01-13T19:53:56.763+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1239]: Using platform MBean server
+|#]
+
+
+[#|2020-01-13T19:53:56.804+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1234]: JMX Connector Server jmxrmi started successfully with url service:jmx:rmi://battlestation/jndi/rmi://battlestation:8686/battlestation/7676/jmxrmi
+|#]
+
+
+[#|2020-01-13T19:53:56.878+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1004]: Starting the admin service using tcp(host = *, port=0, mode=dedicated) with min threads 4 and max threads of 10 
+|#]
+
+
+[#|2020-01-13T19:53:56.879+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1227]: Using file user repository for admin service connection authentication
+|#]
+
+
+[#|2020-01-13T19:53:56.886+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1004]: Starting the jms service using tcp(host = *, port=0, mode=dedicated) with min threads 10 and max threads of 1000 
+|#]
+
+
+[#|2020-01-13T19:53:56.886+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1227]: Using file user repository for jms service connection authentication
+|#]
+
+
+[#|2020-01-13T19:53:56.888+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1004]: Starting the mqdirect2 service using in-process connections with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2020-01-13T19:53:56.888+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1227]: Using file user repository for mqdirect2 service connection authentication
+|#]
+
+
+[#|2020-01-13T19:53:56.889+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1004]: Starting the jmsdirect service using  with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2020-01-13T19:53:56.889+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1227]: Using file user repository for jmsdirect service connection authentication
+|#]
+
+
+[#|2020-01-13T19:53:56.894+0100|FORCE|5.1.1|imq.log.Logger|_ThreadID=173;_ThreadName=p: thread-pool-1; w: 1;|[B1039]: Broker "imqbroker@battlestation:7676" ready.
+|#]
+
+
+[#|2020-01-13T19:53:58.099+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=187;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:57328->jms:38647. Count: service=1 broker=1
+|#]
+
+
+[#|2020-01-13T19:53:58.133+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:57332->jms:38647. Count: service=2 broker=2
+|#]
+
+
+[#|2020-01-13T19:53:58.150+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=191;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:57336->jms:38647. Count: service=3 broker=3
+|#]
+
+
+[#|2020-01-13T19:53:58.169+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=193;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:57340->jms:38647. Count: service=4 broker=4
+|#]
+
+
+[#|2020-01-13T19:53:58.187+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=195;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:57344->jms:38647. Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-13T19:53:58.205+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=197;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:57348->jms:38647. Count: service=6 broker=6
+|#]
+
+
+[#|2020-01-13T19:53:58.221+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=199;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:57352->jms:38647. Count: service=7 broker=7
+|#]
+
+
+[#|2020-01-13T19:53:58.240+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=201;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:57356->jms:38647. Count: service=8 broker=8
+|#]
+
+
+[#|2020-01-13T19:53:58.321+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=187;_ThreadName=Thread-jms[0];|[B1132]: Auto-creating destination stttpc [Topic] 
+|#]
+
+
+[#|2020-01-13T19:53:58.382+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=189;_ThreadName=Thread-jms[2];|[B1132]: Auto-creating destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-01-13T19:58:58.261+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=195;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:57344->jms:38647 because "[B0059]: Client closed the connection". Count: service=7 broker=7
+|#]
+
+
+[#|2020-01-13T19:58:58.274+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=196;_ThreadName=Thread-jms[9];|[B1065]: Accepting: guest@127.0.0.1:57416->jms:38647. Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-13T19:58:58.267+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=201;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:57356->jms:38647 because "[B0059]: Client closed the connection". Count: service=4 broker=4
+|#]
+
+
+[#|2020-01-13T19:58:58.264+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=199;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:57352->jms:38647 because "[B0059]: Client closed the connection". Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-13T19:58:58.263+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=197;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:57348->jms:38647 because "[B0059]: Client closed the connection". Count: service=6 broker=6
+|#]
+
+
+[#|2020-01-13T19:58:58.306+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=195;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:57420->jms:38647. Count: service=6 broker=6
+|#]
+
+
+[#|2020-01-13T19:58:58.319+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=202;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:57424->jms:38647. Count: service=7 broker=7
+|#]
+
+
+[#|2020-01-13T19:58:58.333+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=199;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:57428->jms:38647. Count: service=8 broker=8
+|#]
+
+
+[#|2020-01-13T20:08:58.267+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=181;_ThreadName=MQTimer-Thread;|[B1066]:   Closing: guest@127.0.0.1:57416->jms:38647 because "[B0059]: Client closed the connection". Count: service=7 broker=7
+|#]
+
+
+[#|2020-01-13T20:08:58.276+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=199;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:57428->jms:38647 because "[B0059]: Client closed the connection". Count: service=4 broker=4
+|#]
+
+
+[#|2020-01-13T20:08:58.273+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=202;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:57424->jms:38647 because "[B0059]: Client closed the connection". Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-13T20:08:58.272+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=195;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:57420->jms:38647 because "[B0059]: Client closed the connection". Count: service=6 broker=6
+|#]
+
+
+[#|2020-01-13T20:08:58.322+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=198;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:57588->jms:38647. Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-13T20:08:58.362+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=196;_ThreadName=Thread-jms[9];|[B1065]: Accepting: guest@127.0.0.1:57592->jms:38647. Count: service=6 broker=6
+|#]
+
+
+[#|2020-01-13T20:08:58.378+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=201;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:57596->jms:38647. Count: service=7 broker=7
+|#]
+
+
+[#|2020-01-13T20:08:58.391+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=199;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:57600->jms:38647. Count: service=8 broker=8
+|#]
+
+
+[#|2020-01-13T20:18:58.256+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=181;_ThreadName=MQTimer-Thread;|[B1066]:   Closing: guest@127.0.0.1:57588->jms:38647 because "[B0059]: Client closed the connection". Count: service=7 broker=7
+|#]
+
+
+[#|2020-01-13T20:18:58.417+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=196;_ThreadName=Thread-jms[9];|[B1066]:   Closing: guest@127.0.0.1:57592->jms:38647 because "[B0059]: Client closed the connection". Count: service=6 broker=6
+|#]
+
+
+[#|2020-01-13T20:18:58.433+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=201;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:57596->jms:38647 because "[B0059]: Client closed the connection". Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-13T20:18:58.435+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=199;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:57600->jms:38647 because "[B0059]: Client closed the connection". Count: service=4 broker=4
+|#]
+
+
+[#|2020-01-13T20:18:58.624+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=196;_ThreadName=Thread-jms[9];|[B1065]: Accepting: guest@127.0.0.1:58418->jms:38647. Count: service=5 broker=5
+|#]
+
+
+[#|2020-01-13T20:18:58.779+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=200;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:58422->jms:38647. Count: service=6 broker=6
+|#]
+
+
+[#|2020-01-13T20:18:58.791+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=197;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:58426->jms:38647. Count: service=7 broker=7
+|#]
+
+
+[#|2020-01-13T20:18:58.803+0100|INFO|5.1.1|imq.log.Logger|_ThreadID=202;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:58430->jms:38647. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T11:43:53.851+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[S2004]: Log output channel com.sun.messaging.jmq.util.log.SysLogHandler is disabled: no imqutil in java.library.path|#]
+
+
+[#|2020-04-27T11:43:53.869+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|
+================================================================================
+Message Queue 5.1.1
+Oracle
+Version:  5.1.1  (Build 6-a)
+Compile:  August 17 2017 1649
+
+Copyright (c) 2013, Oracle and/or its affiliates.  All rights reserved.
+================================================================================
+Java Runtime: 1.8.0_252 Private Build /usr/lib/jvm/java-8-openjdk-amd64/jre
+|#]
+
+
+[#|2020-04-27T11:43:53.896+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|   IMQ_HOME=/home/krzysiu/IdeaProjects/glassfish5/mq
+|#]
+
+
+[#|2020-04-27T11:43:53.897+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|IMQ_VARHOME=/home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq
+|#]
+
+
+[#|2020-04-27T11:43:53.897+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|Linux 5.3.0-46-generic amd64 battlestation (8 cpu) krzysiu
+|#]
+
+
+[#|2020-04-27T11:43:53.898+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|Java Heap Size: max=466432k, current=282624k
+|#]
+
+
+[#|2020-04-27T11:43:53.898+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|Arguments: -port 7676 -name imqbroker -nobind -imqhome /home/krzysiu/IdeaProjects/glassfish5/mq -varhome /home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq -libhome /home/krzysiu/IdeaProjects/glassfish5/mq/lib -useRmiRegistry -rmiRegistryPort 8686 -save -silent
+|#]
+
+
+[#|2020-04-27T11:43:53.898+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|JMSRA BrokerProps: imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.service.activate=jmsdirect, imq.imqcmd.password=*****, imq.jmsra.managed=true, imq.cluster.nowaitForMasterBroker=true
+|#]
+
+
+[#|2020-04-27T11:43:53.898+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|Broker Properties: imq.service.activate=jmsdirect, imq.cluster.nowaitForMasterBroker=true, imq.jmx.rmiregistry.use=true, imq.portmapper.port=7676, imq.jmsra.managed=true, imq.instancename=imqbroker, java.util.logging.ConsoleHandler.level=OFF, imq.imqcmd.password=*****, imq.jmx.rmiregistry.port=8686, imq.service.runtimeAdd=mqdirect2, imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.jmx.rmiregistry.start=false, imq.portmapper.bind=false
+|#]
+
+
+[#|2020-04-27T11:43:53.899+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|Embedded Broker 
+|#]
+
+
+[#|2020-04-27T11:43:53.911+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1522]: Create thread pool portmapper for (8, 8)(60s) service
+|#]
+
+
+[#|2020-04-27T11:43:53.930+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|imq.persist.minimizeWrites=true
+|#]
+
+
+[#|2020-04-27T11:43:53.930+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|imq.persist.file.minimizeWrites=false
+|#]
+
+
+[#|2020-04-27T11:43:53.941+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1060]: Loading persistent data...
+|#]
+
+
+[#|2020-04-27T11:43:53.941+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|Using built-in file-based persistent store: /home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/
+|#]
+
+
+[#|2020-04-27T11:43:54.204+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B2219]: Broker property setting imq.persist.minimizeWritesLevel2=true will be ignored
+|#]
+
+
+[#|2020-04-27T11:43:54.223+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|WARNING [B3168]: Invalid broker address for this broker to run in cluster: Loopback IP address is not allowed in broker address mq://127.0.1.1:7676/?instName=imqbroker&brokerSessionUID=3975677619126877440&ha=false for cluster
+|#]
+
+
+[#|2020-04-27T11:43:54.223+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|WARNING [B1137]: Cluster initialization failed. Disabling the cluster service.
+|#]
+
+
+[#|2020-04-27T11:43:54.228+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1013]: Auto Creation of Queues is enabled
+|#]
+
+
+[#|2020-04-27T11:43:54.250+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|new transaction log enabled
+|#]
+
+
+[#|2020-04-27T11:43:54.251+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|sync writes to disk = false
+|#]
+
+
+[#|2020-04-27T11:43:54.251+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|logNonTransactedMsgSend = false
+|#]
+
+
+[#|2020-04-27T11:43:54.251+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|logNonTransactedMsgAck = false
+|#]
+
+
+[#|2020-04-27T11:43:54.251+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1392]: Opening transaction log with file mode rw, maximum size 10,485,760 bytes
+|#]
+
+
+[#|2020-04-27T11:43:54.261+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1270]: Processing messages from transaction log file...
+|#]
+
+
+[#|2020-04-27T11:43:54.261+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1434]: Retrieving stored destinations
+|#]
+
+
+[#|2020-04-27T11:43:54.264+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1503]: Retrieved 3 destinations from store
+|#]
+
+
+[#|2020-04-27T11:43:54.275+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T11:43:54.276+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1151]: Loading destination ctrltpc [Topic] with 0 messages
+|#]
+
+
+[#|2020-04-27T11:43:54.277+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1152]: Loading of destination ctrltpc [Topic] complete
+|#]
+
+
+[#|2020-04-27T11:43:54.277+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-04-27T11:43:54.277+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T11:43:54.278+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1517]: Destroying destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T11:43:54.278+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1151]: Loading destination stttpc [Topic] with 0 messages
+|#]
+
+
+[#|2020-04-27T11:43:54.278+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1152]: Loading of destination stttpc [Topic] complete
+|#]
+
+
+[#|2020-04-27T11:43:54.278+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1387]: Purged 0 messages from destination stttpc [Topic]
+|#]
+
+
+[#|2020-04-27T11:43:54.278+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1159]: Destination stttpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T11:43:54.278+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1151]: Loading destination mq.sys.dmq [Queue] with 0 messages
+|#]
+
+
+[#|2020-04-27T11:43:54.279+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1152]: Loading of destination mq.sys.dmq [Queue] complete
+|#]
+
+
+[#|2020-04-27T11:43:54.285+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1136]: Processing stored transactions
+|#]
+
+
+[#|2020-04-27T11:43:54.286+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1390]: Loading of transactions has been successfully completed
+|#]
+
+
+[#|2020-04-27T11:43:54.300+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1239]: Using platform MBean server
+|#]
+
+
+[#|2020-04-27T11:43:54.317+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1234]: JMX Connector Server jmxrmi started successfully with url service:jmx:rmi://battlestation/jndi/rmi://battlestation:8686/battlestation/7676/jmxrmi
+|#]
+
+
+[#|2020-04-27T11:43:54.382+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1004]: Starting the admin service using tcp(host = *, port=0, mode=dedicated) with min threads 4 and max threads of 10 
+|#]
+
+
+[#|2020-04-27T11:43:54.382+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1227]: Using file user repository for admin service connection authentication
+|#]
+
+
+[#|2020-04-27T11:43:54.392+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1004]: Starting the jms service using tcp(host = *, port=0, mode=dedicated) with min threads 10 and max threads of 1000 
+|#]
+
+
+[#|2020-04-27T11:43:54.392+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1227]: Using file user repository for jms service connection authentication
+|#]
+
+
+[#|2020-04-27T11:43:54.394+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1004]: Starting the mqdirect2 service using in-process connections with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2020-04-27T11:43:54.394+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1227]: Using file user repository for mqdirect2 service connection authentication
+|#]
+
+
+[#|2020-04-27T11:43:54.396+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1004]: Starting the jmsdirect service using  with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2020-04-27T11:43:54.397+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1227]: Using file user repository for jmsdirect service connection authentication
+|#]
+
+
+[#|2020-04-27T11:43:54.414+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 2;|[B1039]: Broker "imqbroker@battlestation:7676" ready.
+|#]
+
+
+[#|2020-04-27T11:43:56.278+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:60422->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:43:56.326+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:60426->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T11:43:56.345+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:60430->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:43:56.363+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:60434->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T11:43:56.387+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:60438->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T11:43:56.403+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:60442->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T11:43:56.416+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=101;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:60446->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T11:43:56.432+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=103;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:60450->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T11:43:56.538+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=Thread-jms[0];|[B1132]: Auto-creating destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T11:43:56.603+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[2];|[B1132]: Auto-creating destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T11:45:54.045+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=103;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:60450->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T11:45:54.046+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:60438->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:45:54.046+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:60430->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:45:54.046+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:60422->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:45:54.046+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=101;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:60446->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:45:54.418+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:60442->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:45:54.419+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:60426->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T11:45:54.418+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:60434->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:47:20.855+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:60474->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:47:20.893+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:60478->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T11:47:20.943+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:60482->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:47:20.956+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:60486->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T11:47:20.973+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:60490->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T11:47:20.986+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=102;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:60494->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T11:47:20.997+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=103;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:60498->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T11:47:21.011+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:60502->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T11:48:19.202+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:60490->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T11:48:19.203+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:60486->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T11:48:19.202+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:60502->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T11:48:19.202+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:60474->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T11:48:19.203+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:60482->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:48:19.203+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:60478->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:48:19.203+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=103;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:60498->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:48:19.203+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=102;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:60494->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T11:50:19.202+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination ctrltpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T11:50:19.202+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T11:50:19.203+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-04-27T11:50:19.210+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T11:55:27.499+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:60544->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:55:27.534+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:60548->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T11:55:27.554+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:60552->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:55:27.569+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:60556->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T11:55:27.583+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:60560->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T11:55:27.598+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=107;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:60564->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T11:55:27.611+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:60568->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T11:55:27.623+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=111;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:60572->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T11:55:27.720+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1132]: Auto-creating destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T11:55:39.386+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:60552->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T11:55:39.386+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:60568->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T11:55:39.386+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=107;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:60564->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T11:55:39.386+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:60544->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T11:55:39.386+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:60556->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T11:55:39.386+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=111;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:60572->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T11:55:39.386+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:60560->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:55:39.386+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:60548->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T11:55:50.572+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:60584->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:55:50.601+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:60588->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T11:55:50.614+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:60592->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:55:50.627+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:60596->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T11:55:50.642+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:60600->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T11:55:50.655+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=112;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:60604->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T11:55:50.666+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=110;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:60608->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T11:55:50.679+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=107;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:60612->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T11:55:57.250+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=110;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:60608->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T11:55:57.250+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=112;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:60604->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T11:55:57.250+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=107;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:60612->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T11:55:57.251+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:60596->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T11:55:57.251+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:60588->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:55:57.251+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:60600->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T11:55:57.251+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:60584->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=3
+|#]
+
+
+[#|2020-04-27T11:55:57.252+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:60592->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T11:56:06.685+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:60624->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:56:06.713+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:60628->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T11:56:06.729+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:60632->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T11:56:06.745+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:60636->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T11:56:06.759+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:60640->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T11:56:06.771+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=108;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:60644->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T11:56:06.783+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=110;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:60648->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T11:56:06.795+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=107;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:60652->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T11:57:13.721+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=110;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:60648->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T11:57:13.722+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=108;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:60644->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T11:57:13.722+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:60632->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T11:57:13.721+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=107;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:60652->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T11:57:13.721+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:60636->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T11:57:13.721+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:60624->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=3
+|#]
+
+
+[#|2020-04-27T11:57:13.721+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:60640->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T11:57:13.721+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:60628->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T11:59:13.694+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination ctrltpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T11:59:13.709+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T11:59:13.709+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-04-27T11:59:13.729+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T12:00:50.971+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:60770->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:00:51.010+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:60774->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:00:51.029+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:60778->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:00:51.043+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:60782->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:00:51.055+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:60786->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:00:51.071+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=114;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:60790->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:00:51.082+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:60794->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:00:51.093+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:60798->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T12:00:51.199+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1132]: Auto-creating destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:02:00.168+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:60786->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:02:00.169+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:60778->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:02:00.169+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:60770->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:02:00.168+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:60774->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:02:00.169+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:60794->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:02:00.169+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=114;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:60790->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T12:02:00.169+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:60782->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T12:02:00.169+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:60798->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:02:11.922+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:60824->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:02:11.954+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:60828->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:02:11.970+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:60832->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:02:11.985+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:60836->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:02:12.002+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:60840->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:02:12.016+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=117;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:60844->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:02:12.027+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=115;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:60848->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:02:12.037+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=114;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:60852->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T12:02:40.615+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:60824->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:02:40.616+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=115;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:60848->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:02:40.616+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=117;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:60844->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T12:02:40.616+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=114;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:60852->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:02:40.615+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:60840->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:02:40.616+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:60836->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:02:40.616+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:60832->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:02:40.616+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:60828->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:02:57.695+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:60864->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:02:57.728+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:60868->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:02:57.744+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:60872->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:02:57.757+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:60876->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:02:57.774+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[9];|[B1065]: Accepting: guest@127.0.0.1:60880->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:02:57.786+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:60884->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:02:57.800+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=119;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:60888->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:02:57.814+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=117;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:60892->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T12:04:29.598+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=119;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:60888->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:04:29.600+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:60872->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T12:04:29.600+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[9];|[B1066]:   Closing: guest@127.0.0.1:60880->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:04:29.599+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:60864->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:04:29.599+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:60868->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:04:29.599+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:60884->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:04:29.599+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:60876->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:04:29.598+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=117;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:60892->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:04:49.092+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:60918->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:04:49.117+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:60922->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:04:49.133+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:60926->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:04:49.152+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:60930->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:04:49.165+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:60934->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:04:49.177+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=114;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:60938->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:04:49.190+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:60942->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:04:49.203+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:60946->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T12:07:05.438+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:60946->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:07:05.438+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:60934->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:07:05.438+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:60918->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:07:05.438+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:60922->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:07:05.438+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:60930->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:07:05.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:60942->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:07:05.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:60926->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:07:05.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=114;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:60938->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T12:09:05.438+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination ctrltpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T12:09:05.438+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:09:05.438+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-04-27T12:09:05.454+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T12:09:05.454+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination stttpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T12:09:05.454+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:09:05.454+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination stttpc [Topic]
+|#]
+
+
+[#|2020-04-27T12:09:05.455+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=84;_ThreadName=MQTimer-Thread;|[B1159]: Destination stttpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T12:16:56.771+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:32942->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:16:56.806+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:32946->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:16:56.823+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:32950->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:16:56.839+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:32954->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:16:56.866+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:32958->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:16:56.887+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:32962->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:16:56.906+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=126;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:32966->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:16:56.929+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=128;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:32970->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T12:16:57.009+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1132]: Auto-creating destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:16:57.059+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1132]: Auto-creating destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:19:38.939+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=126;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:32966->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:19:38.940+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:32954->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T12:19:38.940+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=89;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:32950->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:19:38.940+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:32962->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:19:38.940+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:32946->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:19:38.940+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=128;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:32970->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:19:38.940+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:32958->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:19:38.939+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:32942->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:20:23.391+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:32986->jms:43781. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:20:23.423+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:32990->jms:43781. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:20:23.436+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:32994->jms:43781. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:20:23.453+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:32998->jms:43781. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:20:23.473+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:33002->jms:43781. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:20:23.488+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=129;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:33006->jms:43781. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:20:23.499+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=127;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:33010->jms:43781. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:20:23.511+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:33014->jms:43781. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T12:21:09.376+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:32990->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=6
+|#]
+
+
+[#|2020-04-27T12:21:09.376+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:33002->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:21:09.376+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:33014->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:21:09.376+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=127;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:33010->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:21:09.376+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=90;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:32994->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T12:21:09.376+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:32986->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:21:09.376+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:32998->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:21:09.376+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=129;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:33006->jms:43781 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T12:53:53.446+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[S2004]: Log output channel com.sun.messaging.jmq.util.log.SysLogHandler is disabled: no imqutil in java.library.path|#]
+
+
+[#|2020-04-27T12:53:53.948+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|
+================================================================================
+Message Queue 5.1.1
+Oracle
+Version:  5.1.1  (Build 6-a)
+Compile:  August 17 2017 1649
+
+Copyright (c) 2013, Oracle and/or its affiliates.  All rights reserved.
+================================================================================
+Java Runtime: 1.8.0_252 Private Build /usr/lib/jvm/java-8-openjdk-amd64/jre
+|#]
+
+
+[#|2020-04-27T12:53:53.958+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|   IMQ_HOME=/home/krzysiu/IdeaProjects/glassfish5/mq
+|#]
+
+
+[#|2020-04-27T12:53:53.958+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|IMQ_VARHOME=/home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq
+|#]
+
+
+[#|2020-04-27T12:53:53.959+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|Linux 5.3.0-46-generic amd64 battlestation (8 cpu) krzysiu
+|#]
+
+
+[#|2020-04-27T12:53:53.959+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|Java Heap Size: max=466432k, current=298496k
+|#]
+
+
+[#|2020-04-27T12:53:53.960+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|Arguments: -port 7676 -name imqbroker -nobind -imqhome /home/krzysiu/IdeaProjects/glassfish5/mq -varhome /home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq -libhome /home/krzysiu/IdeaProjects/glassfish5/mq/lib -useRmiRegistry -rmiRegistryPort 8686 -save -silent
+|#]
+
+
+[#|2020-04-27T12:53:53.960+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|JMSRA BrokerProps: imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.service.activate=jmsdirect, imq.imqcmd.password=*****, imq.jmsra.managed=true, imq.cluster.nowaitForMasterBroker=true
+|#]
+
+
+[#|2020-04-27T12:53:53.960+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|Broker Properties: imq.service.activate=jmsdirect, imq.cluster.nowaitForMasterBroker=true, imq.jmx.rmiregistry.use=true, imq.portmapper.port=7676, imq.jmsra.managed=true, imq.instancename=imqbroker, java.util.logging.ConsoleHandler.level=OFF, imq.imqcmd.password=*****, imq.jmx.rmiregistry.port=8686, imq.service.runtimeAdd=mqdirect2, imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.jmx.rmiregistry.start=false, imq.portmapper.bind=false
+|#]
+
+
+[#|2020-04-27T12:53:53.960+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|Embedded Broker 
+|#]
+
+
+[#|2020-04-27T12:53:53.969+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1522]: Create thread pool portmapper for (8, 8)(60s) service
+|#]
+
+
+[#|2020-04-27T12:53:53.989+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|imq.persist.minimizeWrites=true
+|#]
+
+
+[#|2020-04-27T12:53:53.989+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|imq.persist.file.minimizeWrites=false
+|#]
+
+
+[#|2020-04-27T12:53:53.999+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1060]: Loading persistent data...
+|#]
+
+
+[#|2020-04-27T12:53:54.000+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|Using built-in file-based persistent store: /home/krzysiu/IdeaProjects/glassfish5/glassfish/domains/domain1/imq/instances/imqbroker/
+|#]
+
+
+[#|2020-04-27T12:53:54.140+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B2219]: Broker property setting imq.persist.minimizeWritesLevel2=true will be ignored
+|#]
+
+
+[#|2020-04-27T12:53:54.173+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|WARNING [B3168]: Invalid broker address for this broker to run in cluster: Loopback IP address is not allowed in broker address mq://127.0.1.1:7676/?instName=imqbroker&brokerSessionUID=289762800176051456&ha=false for cluster
+|#]
+
+
+[#|2020-04-27T12:53:54.173+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|WARNING [B1137]: Cluster initialization failed. Disabling the cluster service.
+|#]
+
+
+[#|2020-04-27T12:53:54.176+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1013]: Auto Creation of Queues is enabled
+|#]
+
+
+[#|2020-04-27T12:53:54.202+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|new transaction log enabled
+|#]
+
+
+[#|2020-04-27T12:53:54.202+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|sync writes to disk = false
+|#]
+
+
+[#|2020-04-27T12:53:54.202+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|logNonTransactedMsgSend = false
+|#]
+
+
+[#|2020-04-27T12:53:54.202+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|logNonTransactedMsgAck = false
+|#]
+
+
+[#|2020-04-27T12:53:54.203+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1392]: Opening transaction log with file mode rw, maximum size 10,485,760 bytes
+|#]
+
+
+[#|2020-04-27T12:53:54.212+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1270]: Processing messages from transaction log file...
+|#]
+
+
+[#|2020-04-27T12:53:54.212+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1434]: Retrieving stored destinations
+|#]
+
+
+[#|2020-04-27T12:53:54.222+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1503]: Retrieved 3 destinations from store
+|#]
+
+
+[#|2020-04-27T12:53:54.235+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:53:54.235+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1151]: Loading destination ctrltpc [Topic] with 0 messages
+|#]
+
+
+[#|2020-04-27T12:53:54.236+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1152]: Loading of destination ctrltpc [Topic] complete
+|#]
+
+
+[#|2020-04-27T12:53:54.236+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-04-27T12:53:54.236+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T12:53:54.237+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1517]: Destroying destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:53:54.237+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1151]: Loading destination stttpc [Topic] with 0 messages
+|#]
+
+
+[#|2020-04-27T12:53:54.237+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1152]: Loading of destination stttpc [Topic] complete
+|#]
+
+
+[#|2020-04-27T12:53:54.237+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1387]: Purged 0 messages from destination stttpc [Topic]
+|#]
+
+
+[#|2020-04-27T12:53:54.237+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1159]: Destination stttpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T12:53:54.237+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1151]: Loading destination mq.sys.dmq [Queue] with 0 messages
+|#]
+
+
+[#|2020-04-27T12:53:54.237+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1152]: Loading of destination mq.sys.dmq [Queue] complete
+|#]
+
+
+[#|2020-04-27T12:53:54.243+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1136]: Processing stored transactions
+|#]
+
+
+[#|2020-04-27T12:53:54.243+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1390]: Loading of transactions has been successfully completed
+|#]
+
+
+[#|2020-04-27T12:53:54.258+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1239]: Using platform MBean server
+|#]
+
+
+[#|2020-04-27T12:53:54.279+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1234]: JMX Connector Server jmxrmi started successfully with url service:jmx:rmi://battlestation/jndi/rmi://battlestation:8686/battlestation/7676/jmxrmi
+|#]
+
+
+[#|2020-04-27T12:53:54.337+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1004]: Starting the admin service using tcp(host = *, port=0, mode=dedicated) with min threads 4 and max threads of 10 
+|#]
+
+
+[#|2020-04-27T12:53:54.337+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1227]: Using file user repository for admin service connection authentication
+|#]
+
+
+[#|2020-04-27T12:53:54.345+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1004]: Starting the jms service using tcp(host = *, port=0, mode=dedicated) with min threads 10 and max threads of 1000 
+|#]
+
+
+[#|2020-04-27T12:53:54.345+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1227]: Using file user repository for jms service connection authentication
+|#]
+
+
+[#|2020-04-27T12:53:54.346+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1004]: Starting the mqdirect2 service using in-process connections with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2020-04-27T12:53:54.347+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1227]: Using file user repository for mqdirect2 service connection authentication
+|#]
+
+
+[#|2020-04-27T12:53:54.349+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1004]: Starting the jmsdirect service using  with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2020-04-27T12:53:54.349+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1227]: Using file user repository for jmsdirect service connection authentication
+|#]
+
+
+[#|2020-04-27T12:53:54.355+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=77;_ThreadName=p: thread-pool-1; w: 1;|[B1039]: Broker "imqbroker@battlestation:7676" ready.
+|#]
+
+
+[#|2020-04-27T12:53:55.796+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:46622->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:53:55.839+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:46626->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:53:55.860+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:46630->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:53:55.878+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:46634->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:53:55.897+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:46638->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:53:55.911+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=101;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:46642->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:53:55.928+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=103;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:46646->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:53:55.949+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=105;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:46650->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T12:53:56.045+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1132]: Auto-creating destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:53:56.098+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1132]: Auto-creating destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:54:22.010+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:46622->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:54:22.010+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:46626->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:54:22.010+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=103;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:46646->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:54:22.012+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=105;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:46650->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:54:22.012+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:46638->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:54:22.012+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=101;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:46642->jms:37905 because "java.net.SocketException: Connection reset". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:54:22.012+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:46630->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:54:22.012+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:46634->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T12:54:33.015+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:46670->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:54:33.049+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:46674->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:54:33.062+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[9];|[B1065]: Accepting: guest@127.0.0.1:46678->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:54:33.077+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:46682->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:54:33.108+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:46686->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:54:33.122+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=104;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:46690->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:54:33.140+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=102;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:46694->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:54:33.153+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=105;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:46698->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T12:57:11.437+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:46682->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:57:11.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[9];|[B1066]:   Closing: guest@127.0.0.1:46678->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T12:57:11.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=104;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:46690->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:57:11.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:46670->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:57:11.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=105;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:46698->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:57:11.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:46686->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=4
+|#]
+
+
+[#|2020-04-27T12:57:11.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=102;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:46694->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=5
+|#]
+
+
+[#|2020-04-27T12:57:11.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:46674->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:59:11.436+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination ctrltpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T12:59:11.437+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:59:11.437+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-04-27T12:59:11.438+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T12:59:11.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination stttpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T12:59:11.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:59:11.439+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination stttpc [Topic]
+|#]
+
+
+[#|2020-04-27T12:59:11.440+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1159]: Destination stttpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T12:59:25.578+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:46734->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T12:59:25.616+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:46738->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T12:59:25.640+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:46742->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T12:59:25.659+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:46746->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T12:59:25.674+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:46750->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T12:59:25.689+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=108;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:46754->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T12:59:25.701+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=110;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:46758->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T12:59:25.712+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=112;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:46762->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T12:59:25.772+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1132]: Auto-creating destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T12:59:25.821+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1132]: Auto-creating destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T13:02:02.306+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:46734->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:02:02.307+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:46746->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=3
+|#]
+
+
+[#|2020-04-27T13:02:02.307+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:46742->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:02:02.307+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:46750->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:02:02.306+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=112;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:46762->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:02:02.306+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=110;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:46758->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=7
+|#]
+
+
+[#|2020-04-27T13:02:02.307+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:46738->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:02:02.307+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=108;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:46754->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:03:00.599+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:46786->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:03:00.629+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:46790->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:03:00.644+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:46794->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:03:00.663+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:46798->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:03:00.681+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:46802->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:03:00.700+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=113;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:46806->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:03:00.713+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:46810->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:03:00.728+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=110;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:46814->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T13:04:16.583+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:46794->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=6
+|#]
+
+
+[#|2020-04-27T13:04:16.583+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:46786->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:04:16.583+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=113;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:46806->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:04:16.583+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=109;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:46810->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:04:16.584+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=110;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:46814->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:04:16.584+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:46802->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:04:16.584+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:46790->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:04:16.585+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:46798->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:06:16.581+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination stttpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T13:06:16.581+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T13:06:16.581+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination stttpc [Topic]
+|#]
+
+
+[#|2020-04-27T13:06:16.582+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1159]: Destination stttpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T13:07:13.617+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:46848->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:07:13.699+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:46852->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:07:13.737+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:46856->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:07:13.778+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:46860->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:07:13.797+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:46864->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:07:13.816+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=115;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:46868->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:07:13.836+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=117;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:46872->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:07:13.867+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=119;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:46876->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T13:07:13.962+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1132]: Auto-creating destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T13:08:26.573+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:46848->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:08:26.574+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=119;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:46876->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:08:26.578+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:46856->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:08:26.578+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=117;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:46872->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:08:26.588+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=115;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:46868->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:08:26.590+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:46860->jms:37905 because "java.net.SocketException: Connection reset". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:08:26.590+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:46852->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:08:26.592+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:46864->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:09:00.682+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:46910->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:09:00.716+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:46914->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:09:00.759+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:46918->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:09:00.777+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:46922->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:09:00.791+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:46926->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:09:00.810+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=120;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:46930->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:09:00.823+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:46934->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:09:00.838+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=115;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:46938->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T13:09:23.147+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:46922->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:09:23.147+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:46918->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:09:23.147+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:46934->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:09:23.147+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:46914->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:09:23.147+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:46926->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:09:23.147+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:46910->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:09:23.147+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=120;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:46930->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:09:23.147+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=115;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:46938->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=4
+|#]
+
+
+[#|2020-04-27T13:09:33.645+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:46950->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:09:33.676+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:46954->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:09:33.690+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:46958->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:09:33.703+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:46962->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:09:33.718+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:46966->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:09:33.732+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=117;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:46970->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:09:33.745+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:46974->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:09:33.758+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=120;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:46978->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T13:11:58.134+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=120;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:46978->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:11:58.135+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:46950->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:11:58.135+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:46958->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:11:58.135+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:46966->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:11:58.135+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:46954->jms:37905 because "java.net.SocketException: Connection reset". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:11:58.135+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:46962->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:11:58.135+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=117;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:46970->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:11:58.135+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=116;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:46974->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:12:19.791+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:46996->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:12:19.827+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:47000->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:12:19.847+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:47004->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:12:19.862+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:47008->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:12:19.878+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1065]: Accepting: guest@127.0.0.1:47012->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:12:19.899+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=119;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:47016->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:12:19.914+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:47020->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:12:19.932+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=117;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:47024->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T13:13:06.409+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=117;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:47024->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:13:06.409+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=91;_ThreadName=Thread-jms[0];|[B1066]:   Closing: guest@127.0.0.1:47012->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:13:06.409+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=119;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:47016->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:13:06.409+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=118;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:47020->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:13:06.410+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:47008->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:13:06.410+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:46996->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:13:06.410+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:47004->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:13:06.410+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:47000->jms:37905 because "java.net.SocketException: Connection reset". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:15:06.408+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination stttpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T13:15:06.409+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T13:15:06.409+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination stttpc [Topic]
+|#]
+
+
+[#|2020-04-27T13:15:06.409+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1159]: Destination stttpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T13:17:31.430+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:47046->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:17:31.459+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:47050->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:17:31.472+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:47054->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:17:31.490+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:47058->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:17:31.509+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[9];|[B1065]: Accepting: guest@127.0.0.1:47062->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:17:31.522+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:47066->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:17:31.534+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=126;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:47070->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:17:31.550+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=128;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:47074->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T13:17:31.600+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1132]: Auto-creating destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T13:18:43.224+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:47050->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:18:43.225+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=128;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:47074->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:18:43.225+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[9];|[B1066]:   Closing: guest@127.0.0.1:47062->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:18:43.225+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=124;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:47066->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:18:43.225+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:47046->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:18:43.225+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:47054->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:18:43.225+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:47058->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:18:43.225+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=126;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:47070->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:20:43.223+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination stttpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T13:20:43.224+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T13:20:43.225+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination stttpc [Topic]
+|#]
+
+
+[#|2020-04-27T13:20:43.243+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1159]: Destination stttpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T13:20:43.243+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination ctrltpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T13:20:43.243+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T13:20:43.244+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-04-27T13:20:43.244+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T13:54:28.576+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:47384->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:54:28.624+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:47388->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:54:28.639+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:47392->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:54:28.651+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:47396->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:54:28.663+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:47400->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:54:28.676+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=140;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:47404->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:54:28.687+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:47408->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:54:28.699+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:47412->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T13:54:28.755+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1132]: Auto-creating destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T13:54:28.820+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1132]: Auto-creating destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T13:55:47.219+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=144;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:47412->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=5
+|#]
+
+
+[#|2020-04-27T13:55:47.220+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:47400->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:55:47.220+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:47392->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:55:47.219+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=140;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:47404->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=5
+|#]
+
+
+[#|2020-04-27T13:55:47.220+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:47396->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:55:47.220+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=142;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:47408->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=5
+|#]
+
+
+[#|2020-04-27T13:55:47.221+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:47384->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:55:47.220+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:47388->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:57:24.593+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:47438->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T13:57:24.619+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:47442->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T13:57:24.635+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:47446->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:57:24.649+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[9];|[B1065]: Accepting: guest@127.0.0.1:47450->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:57:24.661+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:47454->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:57:24.673+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=143;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:47458->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T13:57:24.684+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=145;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:47462->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:57:24.700+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=140;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:47466->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T13:58:29.014+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=140;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:47466->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T13:58:29.016+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:47442->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:58:29.016+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:47446->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T13:58:29.016+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=143;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:47458->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=1
+|#]
+
+
+[#|2020-04-27T13:58:29.015+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:47454->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T13:58:29.014+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:47438->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T13:58:29.014+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[9];|[B1066]:   Closing: guest@127.0.0.1:47450->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T13:58:29.014+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=145;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:47462->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T14:00:29.012+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination stttpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T14:00:29.022+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T14:00:29.047+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination stttpc [Topic]
+|#]
+
+
+[#|2020-04-27T14:00:29.061+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1159]: Destination stttpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T14:00:29.062+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination ctrltpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T14:00:29.062+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T14:00:29.062+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination ctrltpc [Topic]
+|#]
+
+
+[#|2020-04-27T14:00:29.063+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1159]: Destination ctrltpc [Topic] has been destroyed
+|#]
+
+
+[#|2020-04-27T14:02:50.571+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[9];|[B1065]: Accepting: guest@127.0.0.1:47550->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T14:02:50.600+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:47554->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T14:02:50.616+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:47558->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T14:02:50.630+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:47562->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T14:02:50.642+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1065]: Accepting: guest@127.0.0.1:47566->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T14:02:50.662+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=147;_ThreadName=Thread-jms[13];|[B1065]: Accepting: guest@127.0.0.1:47570->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T14:02:50.674+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=149;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:47574->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T14:02:50.696+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=151;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:47578->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T14:02:50.757+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[9];|[B1132]: Auto-creating destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T14:02:50.942+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1132]: Auto-creating destination ctrltpc [Topic] 
+|#]
+
+
+[#|2020-04-27T14:04:13.285+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=151;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:47578->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T14:04:13.286+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=100;_ThreadName=Thread-jms[9];|[B1066]:   Closing: guest@127.0.0.1:47550->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T14:04:13.285+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=149;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:47574->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T14:04:13.381+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=147;_ThreadName=Thread-jms[13];|[B1066]:   Closing: guest@127.0.0.1:47570->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T14:04:13.381+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=99;_ThreadName=Thread-jms[8];|[B1066]:   Closing: guest@127.0.0.1:47566->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T14:04:13.381+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:47558->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T14:04:13.382+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:47554->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T14:04:13.390+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:47562->jms:37905 because "java.net.SocketException: Connection reset". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T14:06:10.388+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:47620->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T14:06:10.423+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1065]: Accepting: guest@127.0.0.1:47624->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T14:06:10.435+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1065]: Accepting: guest@127.0.0.1:47628->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T14:06:10.464+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:47632->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T14:06:10.477+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:47636->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T14:06:10.489+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=152;_ThreadName=Thread-jms[12];|[B1065]: Accepting: guest@127.0.0.1:47640->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T14:06:10.499+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=151;_ThreadName=Thread-jms[11];|[B1065]: Accepting: guest@127.0.0.1:47644->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T14:06:10.511+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=149;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:47648->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T14:07:28.293+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:47636->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T14:07:28.295+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=97;_ThreadName=Thread-jms[6];|[B1066]:   Closing: guest@127.0.0.1:47628->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T14:07:28.294+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:47632->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T14:07:28.294+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=152;_ThreadName=Thread-jms[12];|[B1066]:   Closing: guest@127.0.0.1:47640->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T14:07:28.294+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=96;_ThreadName=Thread-jms[5];|[B1066]:   Closing: guest@127.0.0.1:47624->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T14:07:28.294+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=149;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:47648->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T14:07:28.294+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=151;_ThreadName=Thread-jms[11];|[B1066]:   Closing: guest@127.0.0.1:47644->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T14:07:28.293+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:47620->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T14:09:01.689+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1065]: Accepting: guest@127.0.0.1:47666->jms:37905. Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T14:09:01.727+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1065]: Accepting: guest@127.0.0.1:47670->jms:37905. Count: service=2 broker=2
+|#]
+
+
+[#|2020-04-27T14:09:01.750+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1065]: Accepting: guest@127.0.0.1:47674->jms:37905. Count: service=3 broker=3
+|#]
+
+
+[#|2020-04-27T14:09:01.769+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[1];|[B1065]: Accepting: guest@127.0.0.1:47678->jms:37905. Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T14:09:01.788+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1065]: Accepting: guest@127.0.0.1:47682->jms:37905. Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T14:09:01.821+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=148;_ThreadName=Thread-jms[14];|[B1065]: Accepting: guest@127.0.0.1:47686->jms:37905. Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T14:09:01.840+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=150;_ThreadName=Thread-jms[15];|[B1065]: Accepting: guest@127.0.0.1:47690->jms:37905. Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T14:09:01.868+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=149;_ThreadName=Thread-jms[10];|[B1065]: Accepting: guest@127.0.0.1:47694->jms:37905. Count: service=8 broker=8
+|#]
+
+
+[#|2020-04-27T14:09:56.361+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=148;_ThreadName=Thread-jms[14];|[B1066]:   Closing: guest@127.0.0.1:47686->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=7 broker=7
+|#]
+
+
+[#|2020-04-27T14:09:56.361+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=150;_ThreadName=Thread-jms[15];|[B1066]:   Closing: guest@127.0.0.1:47690->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=4 broker=4
+|#]
+
+
+[#|2020-04-27T14:09:56.361+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=95;_ThreadName=Thread-jms[4];|[B1066]:   Closing: guest@127.0.0.1:47666->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=5 broker=5
+|#]
+
+
+[#|2020-04-27T14:09:56.361+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=98;_ThreadName=Thread-jms[7];|[B1066]:   Closing: guest@127.0.0.1:47682->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=0 broker=0
+|#]
+
+
+[#|2020-04-27T14:09:56.361+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=149;_ThreadName=Thread-jms[10];|[B1066]:   Closing: guest@127.0.0.1:47694->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=6 broker=6
+|#]
+
+
+[#|2020-04-27T14:09:56.361+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=94;_ThreadName=Thread-jms[3];|[B1066]:   Closing: guest@127.0.0.1:47674->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=1
+|#]
+
+
+[#|2020-04-27T14:09:56.361+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=92;_ThreadName=Thread-jms[1];|[B1066]:   Closing: guest@127.0.0.1:47678->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=2
+|#]
+
+
+[#|2020-04-27T14:09:56.361+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=93;_ThreadName=Thread-jms[2];|[B1066]:   Closing: guest@127.0.0.1:47670->jms:37905 because "[B0061]: Client exited without closing connections". Count: service=1 broker=2
+|#]
+
+
+[#|2020-04-27T14:11:56.359+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1130]: Destroying auto-created destination stttpc [Topic] inactive for 120 seconds
+|#]
+
+
+[#|2020-04-27T14:11:56.360+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1517]: Destroying destination stttpc [Topic] 
+|#]
+
+
+[#|2020-04-27T14:11:56.360+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1387]: Purged 0 messages from destination stttpc [Topic]
+|#]
+
+
+[#|2020-04-27T14:11:56.371+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=86;_ThreadName=MQTimer-Thread;|[B1159]: Destination stttpc [Topic] has been destroyed
+|#]
+
+
