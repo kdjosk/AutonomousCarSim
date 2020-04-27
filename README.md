@@ -12,7 +12,7 @@ MPC control demonstration
 ![MPC Control](demo/MPC.gif)
 
 Pink dots represent the path points predicted by the optimizer. It doesn't work that well, because the COBYLA optimizer isn't really suited for
-this kind of application. Such "high" performance was only made possible by a simplifying the MPC itself, e.g. embedding kinematic constraints in the cost function. Interfacing with IPOPT could probably solve this issue.
+this kind of application. This performance was only obtained by a simplifying the MPC itself, e.g. embedding kinematic constraints in the cost function; otherwise it wouldn't work at all. Interfacing with IPOPT could probably solve this issue.
 
 ## Vehicle model equations
 
